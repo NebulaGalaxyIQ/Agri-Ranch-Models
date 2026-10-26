@@ -1,0 +1,34 @@
+.owner-inbox{display:grid;grid-template-columns:275px minmax(0,1fr);gap:12px;min-height:470px}.owner-thread-list{border:1px solid #e1ebe5;border-radius:8px;max-height:540px;overflow-y:auto}.owner-thread{padding:12px;border-bottom:1px solid #eef1ee;cursor:pointer}.owner-thread:hover,.owner-thread.selected{background:#eaf5ed}.conversation-history{border:1px solid #e1ebe5;border-radius:9px;display:flex;flex-direction:column;min-height:420px}.conversation-messages{flex:1;overflow-y:auto;max-height:400px;padding:16px}.bubble{padding:10px 12px;border-radius:12px;background:#f2f6f3;max-width:82%;margin:9px 0}.bubble.owner{background:#e0f1e7;margin-left:auto}.bubble small{display:block;margin-bottom:4px}.conversation-compose{padding:12px;border-top:1px solid #e6eee8;display:flex;gap:7px}.conversation-compose textarea{min-height:42px}.owner-detail{font-size:12px}.owner-detail p{margin:5px 0}@media(max-width:900px){.owner-inbox{grid-template-columns:1fr}.owner-thread-list{max-height:180px}}
+
+/* Platform-owner subscription overview — compact, responsive, informative. */
+.cape-license-page{width:100%;max-width:1180px;margin:0 auto;display:grid;gap:16px}
+.cape-license-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.cape-license-kpi{display:flex;justify-content:space-between;align-items:center;text-align:left;gap:9px;background:#fff;border:1px solid #e6eee8;border-radius:12px;padding:14px 16px;min-width:0;color:#334b3d}
+.cape-license-kpi span{font-size:12px;line-height:1.25}.cape-license-kpi strong{font-size:22px;color:#0c6041;font-variant-numeric:tabular-nums}
+.cape-license-kpi:hover,.cape-license-kpi:focus-visible{border-color:#58ae82;box-shadow:0 2px 12px #034f2a16}
+.cape-license-main{min-width:0;padding:18px}
+.cape-license-title{display:flex;justify-content:space-between;align-items:start;gap:18px;margin-bottom:16px}
+.cape-license-title h2{font-size:18px}.cape-license-title p{font-size:12px;margin-top:5px;max-width:680px}
+.cape-license-count{color:#567265;font-size:12px;white-space:nowrap}
+.cape-license-filters{display:grid;grid-template-columns:2fr 1fr 1fr;gap:11px;margin-bottom:14px}
+.cape-license-filters label{display:flex;flex-direction:column;gap:5px;font-size:11px;font-weight:700;color:#4e6559;min-width:0}
+.cape-license-filters input,.cape-license-filters select{min-width:0;width:100%;height:36px;background:#fff;border:1px solid #d8e5dd;border-radius:8px;padding:7px 10px;font-size:12px;color:#273b2f}
+.cape-license-table-wrap{max-width:100%;overflow-x:auto;border:1px solid #e5ece7;border-radius:10px}
+.cape-license-table{border-collapse:collapse;width:100%;font-size:12px;text-align:left}
+.cape-license-table th{background:#f0f6f1;padding:10px 12px;color:#325842;white-space:nowrap;font-size:11px}
+.cape-license-table td{padding:11px 12px;vertical-align:middle;border-top:1px solid #ebf0ec;white-space:nowrap}
+.cape-license-table td:first-child{white-space:normal;min-width:180px}.cape-license-table td small{display:block;margin-top:4px;color:#688077;font-size:10px}
+.cape-license-table tbody tr:hover{background:#f8fbf9}.cape-license-days{font-variant-numeric:tabular-nums;font-weight:700}
+.cape-license-pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 9px;font-size:10px;font-weight:750;white-space:nowrap;background:#f0f3f1;color:#486052}
+.cape-license-pill.mode-trial{background:#e9efff;color:#3556a1}.cape-license-pill.mode-paid{background:#e5f4e9;color:#08693f}
+.cape-license-pill.status-active{background:#e6f4ec;color:#087246}.cape-license-pill.status-expiring_soon{background:#fff1d9;color:#985600}
+.cape-license-pill.status-expired,.cape-license-pill.status-suspended{background:#fce7e7;color:#a33232}
+.cape-license-pill.status-pending_verification,.cape-license-pill.status-pending_activation{background:#f0efff;color:#63519c}
+.cape-license-view{border:1px solid #bedecd;border-radius:7px;background:#f5fbf7;color:#126847;padding:6px 10px;font-size:11px;font-weight:700}
+.cape-license-view:hover{background:#e7f5ec}.cape-license-help{font-size:11px;color:#748278;margin-top:12px;line-height:1.5}
+.cape-license-empty{text-align:center;padding:28px!important;color:#6a8072}
+.cape-license-detail{display:grid;gap:9px;padding:8px;max-width:670px}
+.cape-license-detail h3{font-size:16px;margin-bottom:6px}.cape-license-detail>div{display:grid;grid-template-columns:minmax(120px,40%) 1fr;gap:10px;border-bottom:1px solid #eaf0eb;padding:7px 0;font-size:12px}
+.cape-license-detail span{color:#65786b}.cape-license-detail strong{overflow-wrap:anywhere;font-weight:650}
+@media(max-width:920px){.cape-license-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.cape-license-filters{grid-template-columns:1fr 1fr}.cape-license-filters label:first-child{grid-column:1/-1}}
+@media(max-width:520px){.cape-license-title{flex-direction:column}.cape-license-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.cape-license-kpi{padding:12px;display:block}.cape-license-kpi strong{display:block;margin-top:6px}.cape-license-filters{grid-template-columns:1fr}.cape-license-filters label:first-child{grid-column:auto}}

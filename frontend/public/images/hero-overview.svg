@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-label="Overview landscape illustration">
+ <defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e5f5e7"/><stop offset="1" stop-color="#f8fcf7"/></linearGradient>
+  <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#b1d4b1"/><stop offset="1" stop-color="#236a49"/></linearGradient>
+  <pattern id="grain" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 26 26 0" stroke="#fff" stroke-opacity=".08" stroke-width="2"/></pattern>
+ </defs>
+ <rect width="1600" height="420" fill="url(#sky)"/>
+ <circle cx="1380" cy="88" r="64" fill="#fadbb1" opacity=".7"/>
+ <path d="M0 250Q120 175 285 220T600 210T910 233T1225 202T1600 205V420H0Z" fill="#b1d4b1" opacity=".45"/>
+ <path d="M0 290Q135 220 350 270T755 252T1135 283T1600 239V420H0Z" fill="#b1d4b1" opacity=".7"/>
+ <path d="M0 341Q205 284 380 330T850 312T1245 332T1600 310V420H0Z" fill="#236a49" opacity=".85"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="#236a49"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="url(#grain)"/>
+ <g transform="translate(0 -7)">
+<path d='M1100 298v-127l91-67 90 67v127h-40v-85h-98v85z' fill='#2c7951'/><path d='M1147 150h87v42h-87z' fill='#def2e5'/><g fill='#1e6242'><path d='M1000 280v-54l-29-20-35 9-14 21v30h38l9 38h14l6-38h56l4 38h15l5-39z'/><path d='M1330 295v-43l-17-18-29-2-17 20v40h21l5 25h13l3-25h34z'/></g></g>
+ </svg>

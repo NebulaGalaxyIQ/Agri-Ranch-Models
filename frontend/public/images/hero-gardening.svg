@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-label="Gardening landscape illustration">
+ <defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#ecf5df"/><stop offset="1" stop-color="#f8fcf7"/></linearGradient>
+  <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#bbd79c"/><stop offset="1" stop-color="#33835b"/></linearGradient>
+  <pattern id="grain" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 26 26 0" stroke="#fff" stroke-opacity=".08" stroke-width="2"/></pattern>
+ </defs>
+ <rect width="1600" height="420" fill="url(#sky)"/>
+ <circle cx="1380" cy="88" r="64" fill="#f6c6b0" opacity=".7"/>
+ <path d="M0 250Q120 175 285 220T600 210T910 233T1225 202T1600 205V420H0Z" fill="#bbd79c" opacity=".45"/>
+ <path d="M0 290Q135 220 350 270T755 252T1135 283T1600 239V420H0Z" fill="#bbd79c" opacity=".7"/>
+ <path d="M0 341Q205 284 380 330T850 312T1245 332T1600 310V420H0Z" fill="#33835b" opacity=".85"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="#33835b"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="url(#grain)"/>
+ <g transform="translate(0 -7)">
+<g stroke='#2e7a4c' stroke-width='7'><path d='M1050 313V179M1150 313V156M1250 313V170M1350 313V183'/></g><g fill='#ffd3b8' stroke='#f2a87c' stroke-width='2'><circle cx='1050' cy='179' r='27'/><circle cx='1150' cy='156' r='34'/><circle cx='1250' cy='170' r='25'/><circle cx='1350' cy='183' r='30'/></g><g fill='#fff2b9'><circle cx='1050' cy='179' r='11'/><circle cx='1150' cy='156' r='12'/><circle cx='1250' cy='170' r='9'/><circle cx='1350' cy='183' r='11'/></g><g fill='#64a673'><ellipse cx='1020' cy='244' rx='32' ry='12' transform='rotate(-30 1020 244)'/><ellipse cx='1190' cy='222' rx='32' ry='12' transform='rotate(40 1190 222)'/><ellipse cx='1310' cy='236' rx='32' ry='12' transform='rotate(-32 1310 236)'/></g></g>
+ </svg>

@@ -1,0 +1,94 @@
+.env
+backend/.venv/
+**/__pycache__/
+*.pyc
+.vscode/
+# V5 transient state
+*.sqlite
+*.sqlite3
+*.db
+.pytest_cache/
+__pycache__/
+
+.upgrade_backups/
+
+frontend/node_modules/
+
+frontend/dist/
+
+frontend/.env.local
+
+frontend/.vite/
+
+# Private configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Frontend
+node_modules/
+dist/
+.vite/
+
+# Database and backup files
+*.dump
+*.backup
+*.pgdump
+*.sqlite3
+.upgrade_backups/
+backups/
+
+# Generated installation folders
+_*update*/
+_*fix*/
+_*setup*/
+*.zip
+
+# Local logs
+*.log
+
+# Cape Ranch production repository cleanup
+
+# Extracted upgrades and temporary project copies
+/_*/
+
+# Historical root installers
+/INSTALL_FATTENING_*.sh
+/INSTALL_MODULAR.sh
+
+# Private data and uploaded files
+/uploads/
+/storage/
+/private/
+/backend/uploads/
+/backend/storage/
+/frontend/public/uploads/
+
+# Local backups and database files
+*.sql.gz
+*.dump
+*.pgdump
+*.backup
+*.sqlite
+*.sqlite3
+*.db
+
+# Local generated reports
+/reports_output/
+/exports/
+
+# Build artifacts
+/frontend/dist/
+/frontend/node_modules/
+/backend/__pycache__/

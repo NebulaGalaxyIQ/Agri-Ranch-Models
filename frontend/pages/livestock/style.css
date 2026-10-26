@@ -1,0 +1,44 @@
+/* V8 Livestock: confined to this page. V6.5 shared brand, cards, photography and sidebar remain unchanged. */
+.liv-overview{display:grid;gap:14px;margin-top:16px}.liv-overview .grid.kpi{grid-template-columns:repeat(4,minmax(0,1fr))}
+.liv-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:16px 0}
+.liv-figure{min-width:0;min-height:184px;border:1px solid #e8eeea;border-radius:12px;background:#fff;padding:15px 17px;box-shadow:0 3px 16px rgba(13,53,34,.028)}
+.liv-figure h3,.liv-finance h3{font-size:13px;font-weight:700;margin:0 0 14px;color:#20392b}
+.liv-bars{height:130px;display:flex;align-items:flex-end;gap:8px;padding-top:5px}
+.liv-bar{height:100%;min-width:0;flex:1;display:flex;align-items:center;flex-direction:column;justify-content:flex-end;gap:3px}
+.liv-bar-value{height:15px;font-size:9.5px;font-weight:600;color:#335946;white-space:nowrap}
+.liv-bar-track{width:min(100%,36px);height:84px;display:flex;align-items:flex-end;border-radius:6px 6px 1px 1px;background:#f0f5f1;overflow:hidden}
+.liv-bar-track>span{display:block;width:100%;background:linear-gradient(180deg,#299c6b,#087744);border-radius:5px 5px 0 0;min-height:0}
+.liv-bar-label{width:100%;max-width:96px;font-size:9px;color:#5b7066;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.liv-finance{padding:17px}.liv-note{font-size:11px;line-height:1.65;margin:13px 0 0}
+.liv-secondary-actions{display:flex;justify-content:flex-end;gap:8px;padding:14px 15px 0}
+.liv-shifts{display:flex;flex-wrap:wrap;align-items:center;gap:7px;padding:5px 16px 15px}
+.liv-shifts .muted{font-size:11px;margin-right:4px}.liv-shift-active{border-color:#087744!important;color:#076f40!important;background:#e8f6ee!important}
+.liv-project-panel{margin:14px 14px 16px;padding:15px}.liv-project-panel h3{font-size:14px}.liv-project-panel .data-table-wrap{margin-top:11px}
+.liv-sale-preview{padding:12px 14px;border-radius:9px;border:1px solid #bfdbc9;background:#f2f9f4;color:#135435;font-size:12px;line-height:1.55}
+.submodule-content>.liv-chart-grid,.submodule-content>.data-table-wrap{margin-left:15px;margin-right:15px}.submodule-content>.data-table-wrap{margin-bottom:15px}
+.submodule-content>.empty{margin:16px}.submodule-content>.liv-chart-grid:empty{display:none}
+@media(max-width:900px){.liv-overview .grid.kpi{grid-template-columns:repeat(2,minmax(0,1fr))}.liv-chart-grid{grid-template-columns:1fr}}
+@media(max-width:570px){.liv-overview .grid.kpi{grid-template-columns:1fr 1fr}.liv-figure{padding:11px}.liv-bar-track{width:min(100%,28px)}.liv-secondary-actions{justify-content:stretch}.liv-secondary-actions .btn{flex:1}}
+
+.liv-housing-tables{margin:16px;border-top:1px solid #e6ece7;padding-top:12px}.liv-housing-tables h3{font-size:13px;margin:13px 0}.liv-housing-tables .data-table-wrap{margin-bottom:16px}
+
+/* V8.3 — multi-color data graphics and daily staff checklists. All scoped. */
+.liv-bar-track>span{background:var(--liv-bar-color,#168c69)}
+.liv-tasks{margin:14px 16px 20px;padding:15px 16px;border:1px solid #dce6e1;border-radius:12px;background:#fcfefd;box-shadow:0 3px 15px rgba(15,55,30,.025)}
+.liv-tasks-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.liv-tasks-head h3{margin:0;color:#163f2e;font-size:15px}.liv-tasks-head span{color:#2d7d6b;font-size:11px}
+.liv-tasks>p{margin:4px 0 12px;font-size:11px;line-height:1.6}
+.liv-task{display:flex;align-items:center;gap:15px;justify-content:space-between;padding:12px 10px;border:1px solid #e4eeea;border-radius:9px;background:#fff;margin:7px 0}
+.liv-task>label{display:flex;align-items:flex-start;gap:12px;flex:1;cursor:pointer;min-width:160px}
+.liv-task input[type=checkbox]{width:18px;height:18px;flex-shrink:0;accent-color:#1a835e;cursor:pointer;margin:2px 0}
+.liv-task label span{display:grid;gap:2px}.liv-task strong{font-weight:650;color:#243c34;font-size:12px}
+.liv-task small{font-size:10px;color:#667a70;line-height:1.45}.liv-task-done{background:#f0f8f3}
+.liv-task-status{font-size:10px;color:#6d6d70;min-width:74px}.liv-task-done .liv-task-status{color:#16835a}
+.liv-context{display:grid;gap:4px;margin:0 0 9px;border-radius:9px;background:#f1f6fa;padding:13px 14px;border:1px solid #dae8ee;color:#234350}
+.liv-context strong{font-size:12px}.liv-context span{font-size:11px}.liv-context small{font-size:10px;color:#5a717d}
+.liv-secondary-actions{flex-wrap:wrap}
+.liv-secondary-actions>.btn{font-size:11px}
+@media(max-width:650px){.liv-task{flex-wrap:wrap}.liv-task-status{margin-left:30px}.liv-tasks{margin:12px}}
+.liv-alert-line{margin:12px 16px;padding:10px 13px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;border-radius:9px;background:#fff7ec;border:1px solid #f3ddbb;color:#795023;font-size:11px}
+.liv-alert-line strong{font-weight:650;color:#a34a25}
+.liv-cost-preview{grid-column:1/-1;margin:4px 0 8px}.modal-main label[hidden]{display:none!important}

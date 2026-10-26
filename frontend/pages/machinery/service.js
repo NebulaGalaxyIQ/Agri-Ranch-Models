@@ -1,0 +1,1 @@
+import {get,post} from '../../shared/api.js';export const assets=()=>get('v6/machinery/assets');export const records=()=>get('v6/machinery/records');export const createAsset=d=>post('v6/machinery/assets',d);export const createRecord=d=>post('v6/machinery/records',d);

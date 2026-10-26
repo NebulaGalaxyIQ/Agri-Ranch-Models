@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-label="Livestock landscape illustration">
+ <defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e2f5e6"/><stop offset="1" stop-color="#f8fcf7"/></linearGradient>
+  <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#a8cbaa"/><stop offset="1" stop-color="#256843"/></linearGradient>
+  <pattern id="grain" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 26 26 0" stroke="#fff" stroke-opacity=".08" stroke-width="2"/></pattern>
+ </defs>
+ <rect width="1600" height="420" fill="url(#sky)"/>
+ <circle cx="1380" cy="88" r="64" fill="#f5c17d" opacity=".7"/>
+ <path d="M0 250Q120 175 285 220T600 210T910 233T1225 202T1600 205V420H0Z" fill="#a8cbaa" opacity=".45"/>
+ <path d="M0 290Q135 220 350 270T755 252T1135 283T1600 239V420H0Z" fill="#a8cbaa" opacity=".7"/>
+ <path d="M0 341Q205 284 380 330T850 312T1245 332T1600 310V420H0Z" fill="#256843" opacity=".85"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="#256843"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="url(#grain)"/>
+ <g transform="translate(0 -7)">
+<g fill='#2a6548'><path d='M1010 260v-36c0-29 28-51 58-51 37 0 56 25 56 51v36h-18l-8 35h-16l-5-35h-36l-5 35h-16l-8-35z'/><path d='M1210 283c-10-55 14-88 52-88 39 0 63 32 53 88h-22l-3 23h-19l-3-23h-17l-4 23h-19l-4-23Z'/><circle cx='1304' cy='181' r='22'/><path d='M1300 168q30-26 40 6l-20 4z'/><path d='M1378 269c0-32 17-54 38-54s40 23 40 54l-13 20h-50z'/></g></g>
+ </svg>

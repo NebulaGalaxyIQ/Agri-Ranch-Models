@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const {submoduleDirectory,submoduleWorkspace,photoHero,tiles,kpis,recordsPreview}=await import('../frontend/shared/ui.js');
+const assets=path.join(root,'frontend/public/images/v65');
+const sections=[{id:'ranches',title:'Ranches',description:'Registered ranch locations'},{id:'projects',title:'Projects',description:'Track projects'},{id:'batches',title:'Batches',description:'Track batches'}];
+for (const [name,slug] of [['Animal Fattening','fattening'],['Livestock & Poultry','livestock'],['Crop Farming','crops'],['Gardening','gardening'],['Machinery','machinery'],['Inventory','inventory'],['Platform Administration','platform']]){
+ const html=submoduleDirectory(name,sections,{ranches:3,projects:2,batches:4});
+ assert.match(html,/class="photo-hero"/);
+ assert.match(html,new RegExp(`${slug}-hero\\.webp`));
+ assert.equal((html.match(/class="submodule-card"/g)||[]).length,3);
+ assert.ok(!html.includes('submodule-rail')&&!html.includes('<nav'));
+ assert.match(html,/data-submodule="projects"/);
+ assert.ok(fs.statSync(path.join(assets,`${slug}-hero.webp`)).size>2000);
+}
+const overview=tiles([{id:'fattening',title:'Animal Fattening',description:'Fattening projects'}]);
+assert.match(overview,/v65\/overview\/fattening.webp/);
+assert.match(kpis([{label:'Animals',value:27}]),/>27</);
+assert.match(recordsPreview('Current records',[{name:'Maize'}],[['name','Name']]),/Maize/);
+const work=submoduleWorkspace('Crop Farming',sections,'projects','<table></table>');
+assert.match(work,/submodule-content/);
+assert.ok(!work.includes('submodule-rail'));
+for(const mod of ['overview','fattening','livestock','crops','gardening','machinery','inventory','platform'])assert.ok(fs.existsSync(path.join(assets,`${mod}-hero.webp`)));
+const css=fs.readFileSync(path.join(root,'frontend/shared/styles/v65_reference_design.css'),'utf8');
+assert.match(css,/\.submodule-grid\.photo-top/);
+assert.match(css,/\.photo-hero/);
+assert.match(css,/\.inventory-category-gallery/);
+const html=fs.readFileSync(path.join(root,'frontend/v6.html'),'utf8');
+assert.match(html,/v65_reference_design\.css/);
+assert.match(html,/v=6\.(5|6)\.0/);
+const js=fs.readFileSync(path.join(root,'frontend/shared/app.js'),'utf8');
+assert.match(js,/v=6\.(5|6)\.0/);
+console.log('V6_5_REFERENCE_DESIGN_OK: photographic modules, live KPI data, full-width navigation, local assets');

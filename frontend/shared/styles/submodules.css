@@ -1,0 +1,48 @@
+/* V6.4 design option 1 — compact icon cards, full-width independent pages. */
+.submodule-directory{margin:0 0 14px;max-width:100%;min-width:0}
+.submodule-hero{position:relative;display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:132px;margin-bottom:18px;border-radius:14px;padding:22px 26px;overflow:hidden;background:#e0f0e4;color:#153c2a;border:1px solid #d5e9d8;isolation:isolate}
+.submodule-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(241,251,243,.96),rgba(240,250,243,.88) 40%,rgba(243,250,242,.06) 87%),var(--hero);background-position:center;background-size:cover;z-index:-1}
+.submodule-hero-copy{min-width:0;max-width:680px}
+.submodule-eyebrow{text-transform:uppercase;letter-spacing:.085em;font-weight:700;font-size:10px;color:#337551;display:block;margin-bottom:4px}
+.submodule-hero h2{font-size:24px;letter-spacing:-.025em;font-weight:750;color:#123727;line-height:1.2}
+.submodule-hero p{font-size:12px;color:#3d6953;margin-top:5px;max-width:53ch}
+.submodule-hero-label{font-size:11px;padding:6px 11px;white-space:nowrap;background:#fffdf4;border:1px solid #d5e6d7;color:#2b6850;border-radius:20px;font-weight:700;align-self:flex-start;box-shadow:0 2px 9px #173e1d0b}
+.submodule-directory-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:11px}
+.submodule-directory-heading h3{font-size:15px;font-weight:700;letter-spacing:-.01em}
+.submodule-directory-heading p{font-size:11px;margin-top:1px}
+.submodule-area-count{background:#f0f7f2;color:#486d58;border:1px solid #e1eee4;border-radius:30px;padding:4px 9px;font-size:10px;font-weight:700}
+.submodule-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.submodule-card{min-width:0;display:flex;align-items:center;text-align:left;gap:12px;appearance:none;padding:13px 14px;min-height:83px;border:1px solid #e3ebe5;background:#fff;border-radius:11px;color:#1d372a;cursor:pointer;box-shadow:0 2px 11px #0d392208;transition:transform .15s,border-color .15s,box-shadow .15s,background .15s}
+.submodule-card:hover{transform:translateY(-1px);border-color:#9bc2a7;background:#fbfefc;box-shadow:0 7px 19px #184d2119}
+.submodule-card:focus-visible{outline:3px solid #7cbe96;outline-offset:2px}
+.submodule-icon{flex:0 0 42px;height:42px;width:42px;display:grid;place-items:center;color:#136b46;background:#e9f5eb;border-radius:10px}
+.submodule-icon .ui-icon{width:23px;height:23px}
+.submodule-card-copy{display:flex;flex:1;flex-direction:column;gap:3px;min-width:0}
+.submodule-name{font-size:13px;font-weight:700;line-height:1.22;color:#233c2e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.submodule-description{font-size:11px;color:#6b7d70;line-height:1.33;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.submodule-card-right{display:flex;align-items:center;gap:8px;flex:0 0 auto;margin-left:auto}
+.submodule-count{background:#f0f6f2;color:#356b4e;font-size:10px;font-weight:700;padding:3px 7px;border-radius:16px;min-width:24px;text-align:center}
+.submodule-arrow{color:#638b71;font-size:18px;line-height:1}
+/* Full-width submodule record page. No secondary sidebar or tabs. */
+.submodule-page{width:100%;min-width:0}
+.submodule-breadcrumb{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:#718377;font-size:11px;margin:0 0 13px}
+.submodule-breadcrumb strong{color:#1c5535;font-size:12px}
+.submodule-back{background:#fff;color:#2d5340;border:1px solid #dde9df;border-radius:8px;padding:7px 12px;min-height:34px;font-size:11px;font-weight:600}
+.submodule-back:hover{background:#f2f7f3}
+.submodule-content{display:block;width:100%;min-width:0;background:#fff;border:1px solid #e2ece5;border-radius:12px;padding:17px 18px;box-shadow:0 2px 15px #143d1909}
+.submodule-content>.data-table-wrap{max-width:100%;overflow-x:auto}
+.submodule-content .panel{box-shadow:none}
+/* Compact category group controls are not a second sidebar. */
+.inventory-record-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px;margin:14px 0}
+.inventory-record-group{display:flex;align-items:center;justify-content:space-between;gap:7px;text-align:left;background:white;border:1px solid #d9e7dc;border-radius:8px;padding:10px 11px;cursor:pointer;color:#315240;font-size:11.5px}
+.inventory-record-group:hover,.inventory-record-group.selected{background:#eaf4ed;border-color:#90b89e}
+.inventory-record-group small{white-space:nowrap}
+.task-status-switch{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-bottom:17px}
+.task-status-button{border:1px solid #dae5df;background:#fff;color:#3a5645;border-radius:9px;text-align:center;padding:10px 8px;font-size:12px;font-weight:600}
+.task-status-button:hover,.task-status-button.selected{background:#e9f5ed;border-color:#8bbca0;color:#0c6840}
+@media(max-width:1180px){.submodule-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.submodule-hero{min-height:115px;padding:17px}.submodule-hero h2{font-size:20px}.submodule-hero-label{display:none}}
+@media(max-width:590px){.submodule-grid{grid-template-columns:1fr;gap:8px}.submodule-card{min-height:71px;padding:11px 12px}.submodule-icon{width:38px;height:38px;flex-basis:38px}.submodule-hero{min-height:115px}.submodule-content{padding:12px}.submodule-breadcrumb{margin-bottom:11px}.task-status-switch{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.submodule-card{transition:none}.submodule-card:hover{transform:none}}
+
+.submodule-overview-metrics{margin-top:17px}

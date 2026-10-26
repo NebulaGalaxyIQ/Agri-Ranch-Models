@@ -1,0 +1,302 @@
+/* Animal Fattening is a module of independently navigable submodules. */
+.submodule-content .inline-record-actions{margin:15px 0}
+.submodule-content .inline-record-actions .btn{min-height:35px}
+
+/* V6.6 additional profile presentation; V6.5 reference design remains unchanged. */
+.fattening-metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:9px;margin:10px 0}
+.fattening-metric{border:1px solid #e5ebe5;background:#f7faf7;border-radius:9px;padding:10px 12px;min-width:0}
+.fattening-metric>span{color:#64756a;font-size:11px;display:block}
+.fattening-metric>strong{color:#203a2c;font:600 15px Helvetica,Arial,sans-serif;display:block;margin-top:5px;word-break:break-word}
+.fattening-profile-section{border-top:1px solid #edf0ec;padding-top:14px;margin-top:14px}
+.fattening-profile-section h3{font:600 14px Helvetica,Arial,sans-serif;margin:0 0 12px}
+.fattening-profile-chart{width:100%;max-height:170px;background:#fbfdfb;border-radius:8px}
+.fattening-cost{display:flex;justify-content:space-between;align-items:start;gap:8px;border-bottom:1px solid #ebf0eb;padding:9px 2px;font-size:12px}
+.fattening-insight{font-size:12px;margin:8px 0;color:#53675a}
+@media(max-width:580px){.fattening-cost{display:block}.fattening-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Comprehensive animal financial and performance record table. */
+body:has(.submodule-content) .submodule-content table{font-variant-numeric:tabular-nums}
+body:has(.submodule-content) .submodule-content .table-wrap{overflow-x:auto;max-width:100%;scrollbar-width:thin}
+body:has(.submodule-content) .submodule-content table th{white-space:nowrap;font-size:11px}
+body:has(.submodule-content) .submodule-content table td{white-space:nowrap;font-size:12px}
+.fattening-cost-chart{display:grid;gap:9px;margin:10px 0 15px}
+.fattening-cost-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;font-size:12px}
+.fattening-cost-row span{color:#42574a;overflow:hidden;text-overflow:ellipsis}
+.fattening-cost-track{grid-column:1/-1;height:7px;background:#e7ece8;border-radius:99px;overflow:hidden}
+.fattening-cost-fill{height:100%;background:#4B96C5;border-radius:99px}
+.fattening-feed-summary{border:1px solid #dfede4;background:#f7fbf8;padding:10px 13px;border-radius:10px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px}
+.fattening-feed-summary span{color:#63766b}
+
+/* V7.2: original layout reference, with blue management charts.
+   SVG vector charts use live data and remain sharp at every pixel density. */
+.fat71-analytics{margin:8px 0 20px;font-family:Helvetica,Arial,sans-serif;color:#21392a}
+.fat71-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin:0 0 15px}
+.fat71-kpi{background:#f8faf8;border:1px solid #e4ebe4;border-radius:11px;padding:13px 16px;min-width:0;box-shadow:0 1px 2px #11291806}
+.fat71-kpi span{font-size:11px;line-height:1.35;color:#697b6c;display:block}
+.fat71-kpi strong{display:block;font-size:19px;font-weight:650;letter-spacing:-.45px;color:#253c2b;margin-top:7px;line-height:1.3;overflow-wrap:anywhere}
+.fat71-kpi small{display:block;font-size:10px;color:#758778;line-height:1.45;margin-top:5px}
+.fat71-charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:5px 0 17px}
+.fat71-chart{padding:17px 18px 13px;background:white;border:1px solid #e5ebe6;border-radius:12px;box-shadow:0 2px 10px #253f2b08;min-width:0}
+.fat71-chart h3{font:650 13px Helvetica,Arial,sans-serif;color:#283e30;margin:0 0 13px;display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.fat71-unit{display:inline-block;padding:3px 6px;background:#f1f6f2;color:#64806a;border-radius:5px;font-size:10px;font-weight:500}
+.fat71-chart svg{width:100%;height:auto;display:block;max-height:245px;overflow:visible}
+.fat71-chart svg text{font-family:Helvetica,Arial,sans-serif}
+.fat71-chart-note{font:400 11px/1.6 Helvetica,Arial,sans-serif;color:#6f8174;margin:10px 0 0}
+.fat71-bars{display:grid;gap:11px;max-height:235px;overflow-y:auto;scrollbar-width:thin}
+.fat71-bar-row{display:grid;grid-template-columns:minmax(70px,110px) minmax(0,1fr) minmax(35px,65px);gap:11px;align-items:center;font-size:11px;color:#5d7364}
+.fat71-bar-row>b{text-align:right;font-size:11px;color:#284630;font-weight:600;font-variant-numeric:tabular-nums}
+.fat71-bar-row>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fat71-bar-track{height:10px;border-radius:10px;background:#f0f5f0;overflow:hidden}
+.fat71-bar-fill{height:100%;min-width:1px;border-radius:10px}
+.fat71-records{background:white;border:1px solid #e4ebe5;border-radius:12px;box-shadow:0 2px 9px #162e1a07;margin:15px 0 22px;overflow:hidden}
+.fat71-record-title{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px 13px;border-bottom:1px solid #edf1ed}
+.fat71-record-title h2{font:650 14px Helvetica,Arial,sans-serif;color:#273d2d;margin:0}
+.fat71-record-title span{color:#79877e;font-size:11px}
+.fat71-table-scroll{overflow-x:auto;max-width:100%;scrollbar-width:thin}
+.fat71-table{width:100%;min-width:max-content;border-collapse:collapse;font:400 11.5px/1.45 Helvetica,Arial,sans-serif;font-variant-numeric:tabular-nums}
+.fat71-table th{background:#f8faf8;color:#607566;text-align:left;letter-spacing:.01em;font-weight:650;padding:11px 14px;border-bottom:1px solid #e8eee9;white-space:nowrap}
+.fat71-table td{color:#2d4034;padding:11px 14px;border-bottom:1px solid #edf1ee;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fat71-table tbody tr:last-child td{border-bottom:0}
+.fat71-table tbody tr:hover{background:#f5faf6}
+.fat71-table tbody tr[role=button]{cursor:pointer}
+.fat71-table tbody tr:focus-visible{outline:2px solid #287b4c;outline-offset:-2px}
+.fat71-empty{font:400 12px/1.65 Helvetica,Arial,sans-serif;padding:22px;color:#7b897f;background:#fafcfb;border-radius:8px}
+.fat71-insights{background:#f7faf7;border:1px solid #e2ebe2;border-radius:11px;padding:13px 17px;margin-top:12px}
+.fat71-insights h3{font:650 13px Helvetica,Arial,sans-serif;color:#284232;margin:0 0 8px}
+.fat71-insights p{color:#617568;font-size:11.5px;line-height:1.55;margin:6px 0}
+.fat71-mix-view h3{font:650 13px Helvetica,Arial,sans-serif;margin:20px 0 11px;color:#314837}
+.fat71-mix-view .fat71-chart{margin:15px 0}
+.fattening-profile .fat71-charts{margin-top:16px}
+.fattening-profile .fat71-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
+#modal-root .fattening-profile .fat71-chart svg{max-height:180px}
+@media(max-width:1150px){.fat71-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.fat71-charts{grid-template-columns:minmax(0,1fr)}.fat71-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.fat71-kpi{padding:10px 12px}.fat71-chart{padding:13px}}
+@media(max-width:460px){.fat71-bar-row{grid-template-columns:76px minmax(0,1fr) 46px;gap:6px}.fat71-kpi strong{font-size:16px}}
+
+/* V7.5 — balanced blue analytics, independent of the green application
+   sidebar/brand identity. These styles apply only within Animal Fattening. */
+.fat72-overview-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:22px 0 24px;font-family:Helvetica,Arial,sans-serif}
+.fat72-overview-card{position:relative;min-width:0;overflow:hidden;background:#fff;border:1px solid #e7edf3;border-radius:16px;box-shadow:0 4px 16px rgba(30,64,125,.055);padding:19px 20px 21px;display:flex;flex-direction:column;gap:7px;min-height:142px;transition:box-shadow .18s ease,transform .18s ease}
+.fat72-overview-card:hover{box-shadow:0 8px 24px rgba(30,64,125,.11);transform:translateY(-2px)}
+.fat72-overview-head{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;font-weight:600;line-height:1.5;color:#53657f;letter-spacing:.005em}
+.fat72-overview-icon{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center;width:36px;height:36px;border-radius:11px;background:#F2F8FC;color:#4B96C5}
+.fat72-overview-icon svg{width:19px;height:19px}
+.fat72-overview-card>strong{display:block;color:#2d3c4d;font:700 31px/1.13 Helvetica,Arial,sans-serif;letter-spacing:-1.2px;font-variant-numeric:tabular-nums;margin-top:0}
+.fat72-overview-card>small{color:#86939d;font:400 10.5px/1.4 Helvetica,Arial,sans-serif;margin-top:auto}
+/* Every submodule's management metric cards use the same improved hierarchy. */
+.fat71-analytics{color:#3d4d5d}
+.fat71-kpis{gap:13px;margin-bottom:18px}
+.fat71-kpi{border:1px solid #e6edf4;border-radius:14px;background:linear-gradient(145deg,#fff,#fbfdff);box-shadow:0 3px 13px rgba(37,99,235,.055);padding:17px 17px 15px;min-height:105px;display:flex;flex-direction:column;gap:5px}
+.fat72-kpi-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.fat71-kpi .fat72-kpi-heading span:first-child{color:#5d708c;font-size:11.5px;font-weight:600;line-height:1.4}
+.fat72-kpi-dot{display:inline-block;flex-shrink:0;width:8px;height:8px;border-radius:50%;background:#93C6E4;box-shadow:0 0 0 5px #F2F8FC;margin-top:4px}
+.fat71-kpi strong{font:700 23px/1.22 Helvetica,Arial,sans-serif;letter-spacing:-.7px;color:#34485b;margin-top:8px;overflow-wrap:anywhere}
+.fat71-kpi small{color:#7b8b99;margin-top:auto;font-size:10.5px}
+.fat71-charts{gap:16px;margin-bottom:20px}
+.fat71-chart{border-color:#e6edf4;box-shadow:0 4px 17px rgba(21,67,146,.05);border-radius:14px;padding:18px 20px 15px}
+.fat71-chart h3{color:#354e66;font-size:13px;line-height:1.5}
+.fat71-unit{color:#4B96C5;background:#F2F8FC}
+.fat71-chart-note{color:#71829a}
+.fat71-bar-track{background:#edf4fa}
+.fat71-bar-row{color:#62788d}
+.fat71-bar-row>b{color:#356E98}
+.fat71-records{border-color:#e6edf4}
+.fat71-table th{background:#fafcff;color:#65788b;border-bottom-color:#e2eaf5}
+.fat71-table tbody tr:hover{background:#f7fbfe}
+.fat71-table tbody tr:focus-visible{outline-color:#4B96C5}
+.fat71-insights{border-color:#e6edf4;background:#fbfdff}
+.fat71-insights h3{color:#3c5874}
+.fat71-insights p{color:#637889}
+/* Animal profile metrics and prominent automatically computed break-even figure */
+.fattening-metric-grid{gap:12px}
+.fattening-metric{background:#fbfdff;border:1px solid #e8f0f6;border-radius:13px;padding:14px 15px;box-shadow:0 2px 8px rgba(28,78,162,.045)}
+.fattening-metric>span,.fattening-metric .fat72-kpi-heading span{color:#657996;font-size:11.5px;font-weight:550}
+.fattening-metric>strong{font:700 17px/1.35 Helvetica,Arial,sans-serif;color:#34485b;letter-spacing:-.4px;margin-top:9px}
+.fattening-profile-chart{background:#fbfdff}
+.fattening-cost-track{background:#eaf4fb}
+.fattening-cost-fill{background:linear-gradient(90deg,#4B96C5,#8ABFDF)}
+.fat72-financial-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fat72-break-even-card{grid-column:1/-1;display:grid;grid-template-columns:45px 1fr auto;align-items:center;gap:9px 14px;border:1px solid #d8eafa;background:linear-gradient(110deg,#F2F8FC,#fbfdff);border-radius:14px;padding:17px 19px;min-width:0}
+.fat72-break-even-icon{display:flex;align-items:center;justify-content:center;width:43px;height:43px;background:#E5F2FA;border-radius:12px;color:#4B96C5;font-size:23px;font-weight:700}
+.fat72-break-even-card>span{font-size:11px;color:#466889;font-weight:750;letter-spacing:.035em}
+.fat72-break-even-card>span small{display:block;color:#778aa4;font-size:10px;letter-spacing:0;font-weight:450;margin-top:5px}
+.fat72-break-even-card>strong{font:750 24px/1.25 Helvetica,Arial,sans-serif;color:#3c5a78;letter-spacing:-.65px;text-align:right;overflow-wrap:anywhere}
+.fat72-break-even-card>p{grid-column:2/-1;color:#637b9e;margin:0;font-size:11px}
+.fat72-break-even-card>p b{color:#356E98;font-weight:650}
+.fat72-be-note{margin:9px 0;color:#607698;font:400 11px/1.65 Helvetica,Arial,sans-serif;border-left:3px solid #93C6E4;padding:7px 11px;background:#fbfdff;border-radius:0 6px 6px 0}
+@media(max-width:1150px){.fat72-overview-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.fat72-overview-cards{gap:11px}.fat72-overview-card{padding:16px;min-height:125px}.fat72-overview-card>strong{font-size:27px}.fat71-kpi strong{font-size:21px}}
+@media(max-width:500px){.fat72-overview-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.fat72-overview-card{padding:13px;min-height:120px}.fat72-overview-head{font-size:11px}.fat72-overview-icon{width:29px;height:29px}.fat72-overview-icon svg{width:16px;height:16px}.fat72-overview-card>strong{font-size:25px}.fat72-financial-grid{grid-template-columns:minmax(0,1fr)}.fat72-break-even-card{grid-template-columns:40px 1fr}.fat72-break-even-card>strong{grid-column:1/-1;text-align:left}.fat72-break-even-card>p{grid-column:1/-1}}
+
+/* V7.3: Individual weighing filter — neutral control, softly blue focus only. */
+.fat73-weighing-selector{background:#fff;border:1px solid #e6edf2;border-radius:13px;padding:14px 18px;margin:0 0 15px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;box-shadow:0 2px 8px rgba(40,55,65,.025)}
+.fat73-weighing-selector>div{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.fat73-weighing-selector label{color:#47586b;font:600 12px/1.45 Helvetica,Arial,sans-serif}
+.fat73-weighing-selector select{min-width:195px;max-width:300px;padding:9px 12px;border:1px solid #d8e3ec;border-radius:8px;background:#fff;color:#2d3c4d;font:500 12px Helvetica,Arial,sans-serif}
+.fat73-weighing-selector select:focus-visible{outline:2px solid #76B1D8;outline-offset:2px}
+.fat73-weighing-selector p{color:#7b8894;font:400 11px/1.5 Helvetica,Arial,sans-serif;margin:0;flex:1;min-width:180px}
+/* Metric cards have no ornamental underline or bottom accent. */
+.fat72-overview-card{padding-bottom:19px}
+
+/* V7.5 clean-card and readable mid-sky-blue charts.
+   All other V6.5 photographic layouts and forest-green brand styling are untouched. */
+.fat72-overview-card,.fat71-kpi,.fattening-metric{border-color:#e6e9eb!important;background:#fff!important;box-shadow:0 3px 14px rgba(20,37,51,.035)!important}
+.fat72-overview-card::before,.fat72-overview-card::after,.fat71-kpi::before,.fat71-kpi::after,.fattening-metric::after{content:none!important;display:none!important;border:0!important}
+.fat72-overview-card,.fat71-kpi{border-bottom:1px solid #e6e9eb!important}
+.fat72-kpi-dot,.fat72-overview-accent{display:none!important}
+.fat72-overview-icon{color:#4389B8;background:#f5f9fc}
+.fat72-overview-head,.fat71-kpi .fat72-kpi-heading span:first-child{color:#52616b}
+.fat72-overview-card>strong,.fat71-kpi strong{color:#24333e}
+.fat71-unit{color:#527E9D;background:#f3f8fc}
+.fat71-bar-fill{background:#4B96C5}
+.fat71-bar-track{background:#f0f4f7}
+.fattening-cost-fill{background:#4B96C5}
+.fat74-release-note{font:400 10px/1.45 Helvetica,Arial,sans-serif;color:#8a959a;margin:-12px 0 18px;text-align:right}
+
+/* V7.5 contrast refinements: restrained medium sky-blue series; no card accent rules. */
+:where(.fat71-chart,.fattening-profile) .fat71-bar-fill{background:#4B96C5}
+:where(.fat71-chart,.fattening-profile) .fattening-cost-fill{background:linear-gradient(90deg,#428DBD,#77B4DA)}
+.fat71-bar-track{background:#edf3f7}
+.fat71-chart .fat71-unit{color:#35759e;background:#edf6fb}
+.fat72-overview-icon{color:#4389B8;background:#eef6fb}
+.fat72-overview-card,.fat71-kpi{border-bottom-width:1px!important}
+.fat74-release-note{color:#6d7e88}
+
+
+/* V7.6 selective visual improvements; photographic cards and brand shell unchanged. */
+.fat71-kpi{min-height:0!important;padding:10px 13px!important;gap:2px!important}
+.fat71-kpi strong{margin-top:3px!important;font-size:20px!important}
+.fat71-kpi small{margin-top:2px!important}
+.fat72-overview-card{min-height:0!important;padding:12px 15px!important;gap:3px!important}
+.fat72-overview-card>strong{font-size:26px!important}
+.fat72-overview-card>small{margin-top:1px!important}
+.fat76-pie-layout{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center}
+.fat76-pie-layout svg{max-height:160px!important}
+.fat76-legend{display:grid;gap:8px;min-width:0}
+.fat76-legend>div{display:grid;grid-template-columns:10px minmax(0,1fr) auto;align-items:center;gap:7px;font-size:11px;color:#536477}
+.fat76-legend i{display:block;width:9px;height:9px;border-radius:3px}
+.fat76-legend span{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.fat76-legend b{font-variant-numeric:tabular-nums}
+.fat76-project-page{display:grid;gap:17px;margin:8px 0 22px}
+.fat76-project-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.fat76-project-top h2{margin:0;font-size:18px;color:#253b33}
+.fat76-project-top p{margin:5px 0 0;font-size:12px;color:#687c72}
+.fat76-project-actions{display:flex;gap:8px;flex-wrap:wrap}
+.fat76-project-block{border:1px solid #e5ebec;background:white;border-radius:12px;padding:15px;min-width:0}
+.fat76-project-block h3{margin:0 0 11px;font-size:13px;color:#354858}
+.fat76-project-block p{font-size:12px;line-height:1.5;color:#64766b}
+.fat76-project-notice{padding:12px 14px;border:1px solid #e7d6b8;background:#fffaf0;color:#866239;border-radius:10px;font-size:12px}
+.fat76-sale-preview{border:1px solid #dee8ef;background:#fbfdff;padding:14px;border-radius:12px;margin-bottom:13px}
+.fat76-sale-preview h3{margin:0 0 10px;font-size:13px;color:#30495c}
+.fat76-sale-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.fat76-sale-grid .fat71-kpi{background:white;border-radius:8px;box-shadow:none}
+.fat76-sale-result{margin-top:10px;padding:12px 14px;border:1px solid #bcdac9;border-radius:9px;background:#f2faf5;display:flex;justify-content:space-between;gap:8px;color:#2c7753}
+.fat76-sale-result.is-loss{border-color:#ead1b1;background:#fff8ec;color:#a96929}
+.fat76-sale-result span{font-size:12px}.fat76-sale-result strong{font-size:17px}
+.fat76-sale-preview>p{font-size:11px;color:#697c8b;line-height:1.5;margin:10px 0 0}
+@media(max-width:720px){.fat76-pie-layout{grid-template-columns:1fr}.fat76-pie-layout svg{width:170px;margin:auto}.fat76-sale-grid{grid-template-columns:1fr}}
+
+/* V7.7 Projects workspace — dedicated subsections, not another application sidebar.
+   Preserves shared photo cards, organization shell and brand typography. */
+.fat77-project-workspace{display:grid;gap:18px;margin:8px 0 30px;font-family:Helvetica,Arial,sans-serif;color:#304357}
+.fat77-project-header{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:19px 21px;border:1px solid #e1e9ee;background:#fff;border-radius:15px}
+.fat77-project-heading{min-width:0}
+.fat77-eyebrow{font:700 10px/1.6 Helvetica,Arial,sans-serif;letter-spacing:.1em;color:#7e96a5}
+.fat77-project-heading h2{font:700 22px/1.3 Helvetica,Arial,sans-serif;color:#263c4d;margin:4px 0}
+.fat77-project-heading p{font:400 12px/1.65 Helvetica,Arial,sans-serif;color:#738593;margin:0}
+.fat77-section-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.fat77-section-card{appearance:none;cursor:pointer;border:1px solid #e2e9ee;border-radius:13px;background:#fff;padding:16px 14px;display:flex;align-items:flex-start;gap:12px;min-height:94px;text-align:left;color:#3d5363;transition:border-color .15s ease,box-shadow .15s ease,background .15s ease;min-width:0}
+.fat77-section-card:hover,.fat77-section-card:focus-visible{border-color:#88b6d4;background:#fcfdff;box-shadow:0 5px 18px rgba(34,95,131,.07);outline:none}
+.fat77-section-card.is-active{border-color:#74a8cc;background:#f4f9fc;box-shadow:0 3px 10px rgba(48,116,153,.065)}
+.fat77-section-icon{flex-shrink:0;width:36px;height:36px;display:flex;align-items:center;justify-content:center;color:#4e8fba;background:#eaf4fa;border-radius:10px}
+.fat77-section-card:nth-child(3n+2) .fat77-section-icon{background:#edf7f0;color:#458a68}
+.fat77-section-card:nth-child(3n) .fat77-section-icon{background:#fff5e8;color:#c28537}
+.fat77-section-info{display:grid;gap:5px;min-width:0;flex:1}
+.fat77-section-info strong{font:700 12.5px/1.4 Helvetica,Arial,sans-serif;color:#344757}
+.fat77-section-info small{font:400 10.5px/1.55 Helvetica,Arial,sans-serif;color:#82919c}
+.fat77-section-status{flex-shrink:0;font:600 9.5px/1.4 Helvetica,Arial,sans-serif;color:#916c3e;background:#fff7e7;padding:3px 6px;border-radius:6px}
+.fat77-section-status.complete{color:#357453;background:#eaf6ee}
+.fat77-workspace-view{border:1px solid #e3eaf0;background:#fff;border-radius:15px;padding:19px;display:grid;gap:17px;min-width:0}
+.fat77-view-label{display:flex;align-items:center;gap:11px;padding:0 0 15px;border-bottom:1px solid #eef1f4}
+.fat77-view-label>span{width:39px;height:39px;background:#eef5fb;color:#4f91bd;display:flex;align-items:center;justify-content:center;border-radius:10px}
+.fat77-view-label>div{display:grid;gap:4px}
+.fat77-view-label strong{font-size:15px;color:#334b5d}
+.fat77-view-label small{font-size:11px;color:#7b8d9d}
+.fat77-locked{background:#fff9ee;border:1px solid #efd6b6;border-radius:11px;color:#8c6636;font-size:12px;padding:13px 16px}
+.fat77-section-detail{background:#fff;border:1px solid #e9eef2;border-radius:12px;padding:16px;display:grid;gap:15px;min-width:0}
+.fat77-detail-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.fat77-detail-head h3{font:700 14px/1.45 Helvetica,Arial,sans-serif;color:#34495a;margin:0 0 4px}
+.fat77-detail-head p{font:400 11.5px/1.55 Helvetica,Arial,sans-serif;color:#738593;margin:0}
+.fat77-fact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.fat77-fact-grid>div{display:grid;gap:7px;padding:12px 14px;background:#fafcfd;border:1px solid #e8edf1;border-radius:10px;min-width:0}
+.fat77-fact-grid small{font-size:11px;color:#738899}
+.fat77-fact-grid strong{font-size:13px;font-weight:700;color:#3b5161;overflow-wrap:anywhere}
+.fat77-dashboard-banner{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:13px 17px;background:#f5f9fc;border:1px solid #dcebf3;border-radius:11px}
+.fat77-dashboard-banner strong{font-size:13px;color:#40627b}
+.fat77-dashboard-banner p{max-width:670px;font-size:11px;line-height:1.6;color:#748da0;margin:5px 0 0}
+.fat77-dashboard-banner>span{color:#477fa1;font-weight:700;font-size:12px}
+.fat77-hint{font:400 11px/1.7 Helvetica,Arial,sans-serif;color:#728596;margin:3px 0 0}
+.fat77-empty{font:400 12px/1.7 Helvetica,Arial,sans-serif;color:#7e8c98;margin:3px 0}
+.fat77-table{width:100%}
+.fat77-progress{height:7px;background:#ebf1f5;border-radius:50px;overflow:hidden}
+.fat77-progress span{height:100%;display:block;background:#56a677;border-radius:50px}
+.fat77-record-actions{display:flex;flex-wrap:wrap;gap:7px;border-top:1px solid #edf1f4;padding-top:11px}
+.fat77-record-actions>div{display:flex;align-items:center;gap:6px;background:#f8fbfd;border:1px solid #e8eef2;border-radius:8px;padding:5px 8px}
+.fat77-record-actions span{max-width:190px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:10.5px;color:#627a8b}
+.fat77-record-actions .btn{padding:5px 8px;font-size:10.5px}
+.fat77-subhead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:7px}
+.fat77-subhead h4{margin:0;font-size:12px;color:#394c59}
+.fat77-notes{font-size:12px;line-height:1.7;color:#607786;white-space:pre-wrap;margin:0}
+.fat77-action-row{display:flex;gap:10px;flex-wrap:wrap}
+.fat77-modal-note{font-size:12px;line-height:1.6;color:#5b7588;background:#f2f8fb;border:1px solid #e3eff6;border-radius:9px;padding:10px 12px;margin:0 0 12px}
+@media(max-width:1100px){.fat77-section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.fat77-section-grid{grid-template-columns:1fr}.fat77-section-card{min-height:69px;padding:12px}.fat77-fact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fat77-workspace-view{padding:12px}.fat77-project-header{padding:14px}}
+@media(max-width:470px){.fat77-fact-grid{grid-template-columns:1fr}.fat77-project-heading h2{font-size:18px}}
+
+/* V7.8 Project usability: clear section cards and frictionless navigation.
+   This styling is intentionally scoped to Fattening; photo-based cards remain unchanged. */
+.fat77-project-workspace{gap:20px}
+.fat77-project-header,.fat77-project-navigation,.fat77-workspace-view{scroll-margin-top:85px}
+.fat77-workspace-view:focus{outline:none}
+.fat77-project-navigation{border:1px solid #dbe6ed;border-radius:17px;padding:20px;background:linear-gradient(145deg,#ffffff 50%,#f8fbfd);box-shadow:0 5px 25px rgba(31,62,79,.045)}
+.fat78-directory-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:13px;margin:0 0 17px}
+.fat78-directory-head strong{display:block;color:#233b4d;font-size:17px;letter-spacing:-.2px;font-weight:700}
+.fat78-directory-head p{font-size:12px;color:#698395;margin:5px 0 0;line-height:1.6}
+.fat78-directory-head>span{background:#eff5f9;border:1px solid #dde9f0;border-radius:999px;color:#52728a;font-size:11px;font-weight:700;padding:6px 12px}
+.fat77-section-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.fat77-section-card{position:relative;min-height:118px;padding:19px 18px;border-radius:14px;border:1px solid #d6e3eb;background:linear-gradient(120deg,#f6fafd,#fff 78%);box-shadow:0 3px 15px rgba(43,79,103,.045);gap:16px;align-items:flex-start;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease,background .15s ease}
+.fat77-section-card.fat78-tone-1{background:linear-gradient(120deg,#f6fbf8,#fff 78%);border-color:#d6e9df}
+.fat77-section-card.fat78-tone-2{background:linear-gradient(120deg,#fffbf5,#fff 78%);border-color:#eee3d4}
+.fat77-section-card:hover,.fat77-section-card:focus-visible{background:#fff;border-color:#8bb6d0;box-shadow:0 11px 26px rgba(35,88,119,.11);transform:translateY(-2px);outline:none}
+.fat77-section-card.is-active{background:linear-gradient(120deg,#eaf5fc,#fff 86%);border:2px solid #69a4cb;box-shadow:0 7px 22px rgba(64,135,176,.11);padding:18px 17px}
+.fat77-section-card.fat78-tone-1.is-active{background:linear-gradient(120deg,#eaf8ef,#fff 86%);border-color:#69b18d}
+.fat77-section-card.fat78-tone-2.is-active{background:linear-gradient(120deg,#fff3e5,#fff 86%);border-color:#e3ac6f}
+.fat77-section-icon{width:52px;height:52px;flex:0 0 52px;border-radius:13px;background:#dfedf8;color:#397da8;border:1px solid #d2e5f4}
+.fat77-section-icon svg{width:26px;height:26px}
+.fat77-section-card.fat78-tone-1 .fat77-section-icon{background:#e5f4ea;border-color:#d4ebdb;color:#458965}
+.fat77-section-card.fat78-tone-2 .fat77-section-icon{background:#fdf0de;border-color:#f6e2c9;color:#bd813d}
+.fat77-section-info{gap:5px;min-width:0;align-self:center}
+.fat78-section-count{font:700 9.5px/1.2 Helvetica,Arial,sans-serif;letter-spacing:1.05px;color:#7993a6}
+.fat77-section-info strong{font:700 15px/1.3 Helvetica,Arial,sans-serif;color:#263e50;letter-spacing:-.1px}
+.fat77-section-info small{font:400 11.5px/1.5 Helvetica,Arial,sans-serif;color:#617a8b;max-width:350px}
+.fat78-section-right{display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;align-self:stretch;gap:7px;margin-left:auto;flex:0 0 auto}
+.fat77-section-status{font-size:10px;padding:5px 9px;border-radius:7px;white-space:nowrap}
+.fat78-card-arrow{font-size:20px;line-height:1;color:#668aa4;font-weight:600}
+.fat77-section-card:hover .fat78-card-arrow{color:#2b729e}
+.fat78-back-to-sections{margin-left:auto;flex-shrink:0}
+.fat78-workspace-pager{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:18px;border-top:1px solid #e6edf1}
+.fat78-pager-buttons{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.fat78-workspace-pager .btn{white-space:normal;text-align:center}
+/* Width increase applies only to Fattening dialogs. The shared form behavior is untouched. */
+#modal-root .fat78-fattening-modal{width:min(900px,calc(100vw - 36px));max-height:min(92vh,920px);display:flex;flex-direction:column;overflow:hidden}
+#modal-root .fat78-fattening-modal .modal-head{flex:0 0 auto;padding:20px 25px}
+#modal-root .fat78-fattening-modal .modal-main{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:22px 25px}
+#modal-root .fat78-fattening-modal .modal-actions{flex:0 0 auto;padding:15px 25px}
+#modal-root .fat78-fattening-modal .form-grid{gap:17px 20px}
+#modal-root .fat78-fattening-modal .form-grid label{font-size:12.5px;gap:7px}
+#modal-root .fat78-fattening-modal input,#modal-root .fat78-fattening-modal select{min-height:43px;padding:10px 12px}
+#modal-root .fat78-fattening-modal textarea{min-height:112px;padding:12px}
+@media(max-width:1100px){.fat77-section-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:750px){.fat77-project-navigation{padding:14px}.fat77-section-grid{grid-template-columns:1fr;gap:11px}.fat77-section-card{min-height:100px;padding:15px}.fat77-section-card.is-active{padding:14px}.fat77-section-icon{width:45px;height:45px;flex-basis:45px}.fat77-section-icon svg{width:22px;height:22px}.fat77-section-info strong{font-size:14px}.fat78-section-right{gap:5px}.fat78-workspace-pager{align-items:stretch}.fat78-pager-buttons{justify-content:flex-end}.fat78-back-to-sections{font-size:11px}}
+@media(max-width:550px){#modal-root .fat78-fattening-modal{width:100vw;max-height:100dvh;height:100dvh;border-radius:0}#modal-root .fat78-fattening-modal .modal-head{padding:16px}#modal-root .fat78-fattening-modal .modal-main{padding:16px}#modal-root .fat78-fattening-modal .modal-actions{padding:12px 16px}#modal-root .fat78-fattening-modal .form-grid{grid-template-columns:1fr;gap:14px}.fat78-workspace-pager>.btn{width:100%}.fat78-pager-buttons{width:100%}.fat78-pager-buttons .btn{flex:1}}
+@media(prefers-reduced-motion:reduce){.fat77-section-card{transition:none}.fat77-section-card:hover{transform:none}}

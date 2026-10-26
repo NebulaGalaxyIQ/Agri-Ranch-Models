@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-label="Inventory landscape illustration">
+ <defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#ebf6e8"/><stop offset="1" stop-color="#f8fcf7"/></linearGradient>
+  <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#b2d3b2"/><stop offset="1" stop-color="#206544"/></linearGradient>
+  <pattern id="grain" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 26 26 0" stroke="#fff" stroke-opacity=".08" stroke-width="2"/></pattern>
+ </defs>
+ <rect width="1600" height="420" fill="url(#sky)"/>
+ <circle cx="1380" cy="88" r="64" fill="#e6b57b" opacity=".7"/>
+ <path d="M0 250Q120 175 285 220T600 210T910 233T1225 202T1600 205V420H0Z" fill="#b2d3b2" opacity=".45"/>
+ <path d="M0 290Q135 220 350 270T755 252T1135 283T1600 239V420H0Z" fill="#b2d3b2" opacity=".7"/>
+ <path d="M0 341Q205 284 380 330T850 312T1245 332T1600 310V420H0Z" fill="#206544" opacity=".85"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="#206544"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="url(#grain)"/>
+ <g transform="translate(0 -7)">
+<g fill='#2d8155'><path d='m1005 195 105-50 105 50-105 52z'/><path d='M1005 195v105l105 50V247z' fill='#3f9765'/><path d='m1215 195-105 52v103l105-51z' fill='#266948'/><path d='m1155 245 105-50 105 50-105 52z' fill='#d1b88b'/><path d='M1155 245v78l105 48v-74z' fill='#efd09a'/><path d='m1365 245-105 52v74l105-51z' fill='#ac805c'/></g><g stroke='#fbf3e1' stroke-width='5'><path d='m1060 171 105 52M1210 220l105 51'/></g></g>
+ </svg>

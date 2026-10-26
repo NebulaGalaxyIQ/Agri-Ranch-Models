@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="420" viewBox="0 0 1600 420" role="img" aria-label="Fattening landscape illustration">
+ <defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dcefe2"/><stop offset="1" stop-color="#f8fcf7"/></linearGradient>
+  <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#9cc8a7"/><stop offset="1" stop-color="#136b48"/></linearGradient>
+  <pattern id="grain" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 26 26 0" stroke="#fff" stroke-opacity=".08" stroke-width="2"/></pattern>
+ </defs>
+ <rect width="1600" height="420" fill="url(#sky)"/>
+ <circle cx="1380" cy="88" r="64" fill="#f5dfac" opacity=".7"/>
+ <path d="M0 250Q120 175 285 220T600 210T910 233T1225 202T1600 205V420H0Z" fill="#9cc8a7" opacity=".45"/>
+ <path d="M0 290Q135 220 350 270T755 252T1135 283T1600 239V420H0Z" fill="#9cc8a7" opacity=".7"/>
+ <path d="M0 341Q205 284 380 330T850 312T1245 332T1600 310V420H0Z" fill="#136b48" opacity=".85"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="#136b48"/>
+ <path d="M0 372Q380 340 690 382T1280 358T1600 371V420H0Z" fill="url(#grain)"/>
+ <g transform="translate(0 -7)">
+<g fill='#284f36' opacity='.9'><path d='M1100 256v-84l-24-34-35 6-20 28-15 8-20 22-1 26h42l9 61h22l12-62h104l12 62h22l10-72 24-13 19-19-12-16-38 13-19-20h-48l-28 30Z'/><path d='M1310 284v-69l-15-23-23 1-20 19-15 16-1 21h26l5 43h17l11-43h57l10 43h17l8-52 14-11-9-12-25 11-15-13h-32l-10 19Z' opacity='.85'/></g>
+<g fill='#f3e6c4'><circle cx='1120' cy='191' r='5'/><circle cx='1330' cy='230' r='4'/></g></g>
+ </svg>

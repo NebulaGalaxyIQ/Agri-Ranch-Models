@@ -1,0 +1,1 @@
+import {get,post} from '../../shared/api.js';export const areas=()=>get('v6/gardening/areas');export const records=()=>get('v6/gardening/records');export const createArea=d=>post('v6/gardening/areas',d);export const createRecord=d=>post('v6/gardening/records',d);

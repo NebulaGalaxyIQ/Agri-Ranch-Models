@@ -1,0 +1,1 @@
+.task-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px;border:1px solid #e3ece6;border-radius:9px;margin-bottom:7px}.task-row strong{display:block}.task-row small{font-size:11px}.task-row.done{background:#f3faf4}.task-notice{padding:24px;border-radius:10px;background:#edf8f0;color:#205a37;text-align:center}

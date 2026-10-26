@@ -1,0 +1,1 @@
+import {get,post} from '../../shared/api.js';export const tasks=()=>get('v5/tasks');export const members=()=>get('v5/members');export const roles=()=>get('v5/roles');export const complete=id=>post(`v5/tasks/${id}/complete`,{});

@@ -1,0 +1,22 @@
+{
+  "name": "cape-ranch-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Local development and production build tooling for the existing Cape Ranch frontend",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite --config vite.config.mjs",
+    "dev:lite": "node scripts/server.mjs --dev",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/server.mjs --preview",
+    "check": "node scripts/check.mjs",
+    "test": "node --test scripts/frontend.test.mjs",
+    "verify": "npm run check && npm test && npm run build"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
