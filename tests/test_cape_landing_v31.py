@@ -36,8 +36,8 @@ class LandingV31(unittest.TestCase):
   self.assertNotIn('.cr3-image-label{',CSS)
   self.assertEqual(HTML.count('class="cr3-band-visual cr3-reveal"'),6)
  def test_dark_footer_original_brand_retained(self):
-  self.assertIn('background:radial-gradient(',CSS)
-  self.assertIn('#072b25',CSS)
+  self.assertIn('.cr3-footer{background:#080a0c',CSS)
+  self.assertIn('.cr3-final{position:relative;background:#0c0e10',CSS)
   self.assertIn('cape-ranch-footer-logo.webp',HTML)
   p=Tags();p.feed(HTML)
   names=[a['src'].rsplit('/',1)[-1] for a in p.images]
