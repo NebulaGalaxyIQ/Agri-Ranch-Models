@@ -2,191 +2,160 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#123d30">
-  <meta name="description" content="Cape Ranch brings ranching, crop farming, gardening, machinery, inventory, finance and staff workflows into one connected agricultural management platform.">
-  <title>Cape Ranch — Ranching, Crops, Gardens and Data in One Place</title>
-  <link rel="icon" type="image/png" href="/frontend/public/images/branding/cape-ranch-mark.png">
-  <link rel="preload" as="image" href="/frontend/public/images/landing-v2/hero-design02.webp" fetchpriority="high">
-  <link rel="stylesheet" href="/frontend/shared/landing-v2.css?v=2.2.0">
-  <script type="module" src="/frontend/shared/landing-v2.js?v=2.2.0"></script>
+  <meta name="description" content="Cape Ranch connects livestock, crops, gardening, farm finances, machinery and people in one practical agricultural operations platform.">
+  <title>Cape Ranch — One Platform for the Whole Operation</title>
+  <meta property="og:title" content="Cape Ranch | Modern agricultural operations">
+  <meta property="og:description" content="Your ranch, crops, garden, people and data. One connected workspace.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.caperanch.com/frontend/public/images/landing-v3/hero-rancher.webp">
+  <link rel="icon" href="/frontend/public/images/branding/cape-ranch-mark.png">
+  <link rel="preload" as="image" href="/frontend/public/images/landing-v3/hero-rancher.webp" fetchpriority="high">
+  <link rel="stylesheet" href="/frontend/shared/landing-v3.css?v=3.0.0">
+  <script type="module" src="/frontend/shared/landing-v3.js?v=3.0.0"></script>
 </head>
 <body>
-  <a class="cr-skip" href="#main">Skip to content</a>
-  <header class="cr-header" id="top">
-    <div class="cr-header-wrap cr-wrap">
-      <a href="/" class="cr-logo cr-brand-link" aria-label="Cape Ranch home">
-        <img class="cr-brand-image" src="/frontend/public/images/landing-v2/cape-ranch-logo.webp" alt="Cape Ranch" width="485" height="80" fetchpriority="high">
-      </a>
-      <nav class="cr-nav" id="cr-navigation" aria-label="Main navigation">
-        <a href="#solutions">Solutions</a>
-        <a href="#features">Features</a>
-        <a href="#platform">The platform</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#questions">FAQs</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="cr3-sprite" aria-hidden="true">
+    <symbol id="cr3-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></symbol>
+    <symbol id="cr3-diagonal" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="cr3-leaf" viewBox="0 0 24 24"><path d="M20 4C8 4 4 10 4 17c4-1 8-5 12-9M4 20C4 12 10 5 20 4"/></symbol>
+    <symbol id="cr3-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="cr3-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 16v-4m5 4V8m5 8V5"/></symbol>
+    <symbol id="cr3-box" viewBox="0 0 24 24"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5ZM3 7l9 5 9-5M12 12v10"/></symbol>
+    <symbol id="cr3-drops" viewBox="0 0 24 24"><path d="M12 3c-2 4-7 8-7 12a7 7 0 0 0 14 0c0-4-5-8-7-12Z"/></symbol>
+    <symbol id="cr3-gear" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8ZM10 2h4l1 3 3 1 3-1 2 4-2 2v3l2 2-2 4-3-1-3 1-1 3h-4l-1-3-3-1-3 1-2-4 2-2v-3L1 9l2-4 3 1 3-1 1-3Z"/></symbol>
+    <symbol id="cr3-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2H3Zm14-14a3 3 0 0 1 0 6m1 3a5 5 0 0 1 3 5h-3"/></symbol>
+    <symbol id="cr3-shield" viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 6 4 9 8 10 4-1 8-4 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="cr3-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="cr3-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="cr3-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="cr3-spark" viewBox="0 0 24 24"><path d="m12 2 2.6 7.4L22 12l-7.4 2.6L12 22l-2.6-7.4L2 12l7.4-2.6L12 2Z"/></symbol>
+    <symbol id="cr3-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4V8Z"/></symbol>
+  </svg>
+  <a class="cr3-skip" href="#main">Skip to content</a>
+
+  <header class="cr3-header" id="top">
+    <div class="cr3-container cr3-header-inner">
+      <a class="cr3-brand" href="/" aria-label="Cape Ranch home"><img src="/frontend/public/images/landing-v3/cape-ranch-logo.webp" alt="Cape Ranch" width="485" height="80"></a>
+      <nav class="cr3-nav" id="cr3-nav" aria-label="Main navigation">
+        <a href="#solutions">Solutions</a><a href="#features">Features</a><a href="#platform">The platform</a><a href="#how-it-works">How it works</a><a href="#faq">FAQs</a>
       </nav>
-      <div class="cr-header-actions"><a class="cr-btn cr-btn-outline cr-btn-small" href="/login">Sign in</a><a class="cr-btn cr-btn-orange cr-btn-small" href="/register-organization">Get started <span aria-hidden="true">↗</span></a></div>
-      <button type="button" class="cr-menu-toggle" aria-controls="cr-navigation" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <div class="cr3-header-cta"><a class="cr3-btn cr3-btn-light cr3-btn-sm" href="/login">Sign in</a><a class="cr3-btn cr3-btn-orange cr3-btn-sm" href="/register-organization">Get started <svg><use href="#cr3-diagonal"/></svg></a></div>
+      <button class="cr3-menu-toggle" type="button" aria-controls="cr3-nav" aria-expanded="false" aria-label="Open menu"><svg><use href="#cr3-menu"/></svg></button>
     </div>
-    <div class="cr-scroll-indicator" aria-hidden="true"></div>
+    <div class="cr3-progress" aria-hidden="true"></div>
   </header>
 
   <main id="main">
-    <section class="cr-hero" aria-labelledby="cr-hero-title">
-      <div class="cr-hero-photo" role="img" aria-label="Rancher overlooking cattle and a mountain valley at golden hour"></div>
-      <div class="cr-hero-wash"></div>
-      <div class="cr-wrap cr-hero-content">
-        <div class="cr-hero-copy">
-          <div class="cr-eyebrow"><i></i> THE CONNECTED AGRICULTURAL PLATFORM</div>
-          <h1 id="cr-hero-title">Ranching, Crops,<br>Gardens and Data —<br><em>All in One Place.</em></h1>
-          <p>Cape Ranch is the connected platform for managing ranches, farms and agricultural operations. Plan, track and grow — all from one beautifully simple workspace.</p>
-          <div class="cr-hero-actions"><a class="cr-btn cr-btn-orange cr-btn-large" href="/register-organization">Get started <span aria-hidden="true">↗</span></a><button class="cr-btn cr-btn-white cr-btn-large" type="button" data-tour><span class="cr-play">▶</span> Explore the platform</button></div>
-          <div class="cr-trust-line"><span>✓ All-in-one management</span><span>✓ Built for real producers</span><span>✓ Secure and reliable</span><span>✓ Grows with your operation</span></div>
+    <section class="cr3-hero" aria-labelledby="cr3-title">
+      <div class="cr3-hero-image" role="img" aria-label="Rancher overlooking cattle in a golden mountain valley"></div>
+      <div class="cr3-container cr3-hero-inner">
+        <div class="cr3-hero-copy">
+          <p class="cr3-overline"><span></span> ONE CONNECTED AGRICULTURAL PLATFORM</p>
+          <h1 id="cr3-title">Ranching, Crops,<br>Gardens and Data —<br><em>All in One Place.</em></h1>
+          <p class="cr3-lead">Cape Ranch helps ranchers, farmers and agricultural teams plan daily work, manage resources and make confident decisions — in one beautifully connected workspace.</p>
+          <div class="cr3-hero-actions"><a class="cr3-btn cr3-btn-orange" href="/register-organization">Get started <svg><use href="#cr3-arrow"/></svg></a><a class="cr3-btn cr3-btn-glass" href="#platform"><svg><use href="#cr3-play"/></svg> Explore the platform</a></div>
+          <div class="cr3-assurances"><span><svg><use href="#cr3-check"/></svg> Built for real operations</span><span><svg><use href="#cr3-check"/></svg> Flexible across teams</span><span><svg><use href="#cr3-check"/></svg> One connected view</span></div>
         </div>
-        <div class="cr-floating-note" aria-hidden="true"><span class="cr-note-icon" aria-hidden="true">▥</span><span>More time outside.<strong>Smarter decisions inside.</strong></span></div>
-        <p class="cr-handwritten" aria-hidden="true">A modern tool<br>for a timeless<br>way of life. <span>↙</span></p>
+        <p class="cr3-hero-script" aria-hidden="true">A modern tool<br>for a timeless<br>way of life.<span>↙</span></p>
+        <div class="cr3-hero-float"><span class="cr3-float-icon"><svg><use href="#cr3-chart"/></svg></span><div><strong>Less paperwork.</strong><span>More clarity in every decision.</span></div></div>
       </div>
     </section>
 
-    <section id="solutions" class="cr-solution-section" aria-label="Solutions for the way you work">
-      <div class="cr-wide-wrap cr-solution-grid">
-        <a class="cr-solution cr-reveal" href="#feature-herd"><img src="/frontend/public/images/landing-v2/ranching.webp" alt="Cattle on a managed ranch" width="830" height="580"><span class="cr-solution-shade"></span><span class="cr-solution-label"><strong>Ranching</strong><small>Manage herds, feed, grazing and more</small></span><span class="cr-solution-arrow" aria-hidden="true">↗</span></a>
-        <a class="cr-solution cr-reveal" href="#feature-crops"><img src="/frontend/public/images/landing-v2/crops.webp" alt="Healthy rows of crops on a farm" width="830" height="580"><span class="cr-solution-shade"></span><span class="cr-solution-label"><strong>Crops</strong><small>Plan, track and improve your yields</small></span><span class="cr-solution-arrow" aria-hidden="true">↗</span></a>
-        <a class="cr-solution cr-reveal" href="#feature-gardens"><img src="/frontend/public/images/landing-v2/gardening.webp" alt="Green vegetable gardens and beautiful landscaping" width="830" height="580"><span class="cr-solution-shade"></span><span class="cr-solution-label"><strong>Gardening</strong><small>Organize and grow with confidence</small></span><span class="cr-solution-arrow" aria-hidden="true">↗</span></a>
-        <a class="cr-solution cr-reveal" href="#platform"><img src="/frontend/public/images/landing-v2/intelligence.webp" alt="Agricultural operations and productive land" width="830" height="580"><span class="cr-solution-shade"></span><span class="cr-solution-label"><strong>Data intelligence</strong><small>Turn your data into better decisions</small></span><span class="cr-solution-arrow" aria-hidden="true">↗</span></a>
+    <section class="cr3-metrics" aria-label="Cape Ranch platform highlights">
+      <div class="cr3-container cr3-metrics-grid">
+        <div class="cr3-metric cr3-reveal"><strong>10<span>+</span></strong><div><b>Connected capabilities</b><small>From the field to the office</small></div></div>
+        <div class="cr3-metric cr3-reveal"><strong>1</strong><div><b>Unified workspace</b><small>One place to manage work</small></div></div>
+        <div class="cr3-metric cr3-reveal"><strong>360<span>°</span></strong><div><b>Operational perspective</b><small>Records, tasks and insights</small></div></div>
+        <div class="cr3-metric cr3-reveal"><strong>1,000<span>+</span></strong><div><b>Organization ambition</b><small>Our future adoption goal*</small></div></div>
       </div>
+      <p class="cr3-metrics-note">*1,000+ is an adoption goal, not a claim about current customers.</p>
     </section>
 
-
-    <!-- Product capabilities + one clearly labelled adoption target; no invented client usage. -->
-    <section id="highlights" class="cr-metrics-band" aria-labelledby="cr-metrics-title">
-      <div class="cr-wrap cr-metrics-layout">
-        <div class="cr-metrics-intro cr-reveal"><span class="cr-kicker">BUILT FOR THE BIGGER PICTURE</span><h2 id="cr-metrics-title">Everything together.<br><em>Room to grow.</em></h2><p>Whatever your operation looks like today, the platform brings the right details into focus as your team grows.</p></div>
-        <div class="cr-metrics-grid" data-stagger-grid>
-          <a class="cr-metric cr-reveal" href="/register-organization" aria-label="Connected areas: Operations covering livestock, crops, inventory, people, equipment and more"><span class="cr-metric-number">10+</span><strong>Connected areas</strong><small>Operations covering livestock, crops, inventory, people, equipment and more</small><span class="cr-metric-arrow" aria-hidden="true">↗</span></a>
-          <a class="cr-metric cr-reveal" href="#platform" aria-label="Unified workspace: A connected view of work, records and decisions across the organization"><span class="cr-metric-number">1</span><strong>Unified workspace</strong><small>A connected view of work, records and decisions across the organization</small><span class="cr-metric-arrow" aria-hidden="true">↗</span></a>
-          <a class="cr-metric cr-reveal" href="#platform" aria-label="Operational picture: From daily field activity to management reporting and oversight"><span class="cr-metric-number">360°</span><strong>Operational picture</strong><small>From daily field activity to management reporting and oversight</small><span class="cr-metric-arrow" aria-hidden="true">↗</span></a>
-          <a class="cr-metric cr-reveal" href="#why-cape" aria-label="Organizations: our goal: Our long-term adoption ambition, not a current customer count"><span class="cr-metric-number">1,000+</span><strong>Organizations: our goal</strong><small>Our long-term adoption ambition, not a current customer count</small><span class="cr-metric-arrow" aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="cr-section cr-features">
-      <div class="cr-wrap">
-        <div class="cr-section-heading cr-heading-inline cr-reveal"><div><span class="cr-kicker">BUILT FOR THE WHOLE OPERATION</span><h2>Powerful tools for every part<br>of your operation.</h2><p>From livestock to landscapes, Cape Ranch brings daily work and meaningful insights together in one integrated platform.</p></div><a class="cr-link" href="#platform">See the platform <span aria-hidden="true">↗</span></a></div>
-        <div class="cr-feature-grid" aria-label="Cape Ranch feature cards" data-stagger-grid>
-          <a id="feature-herd" href="/register-organization" class="cr-feature cr-reveal" data-accent="orange"><img src="/frontend/public/images/landing-v2/herd.webp" alt="Herd management livestock" loading="lazy"><div class="cr-feature-copy"><span class="cr-feature-icon">♜</span><h3>Herd Management</h3><p>Track individual animals, health, movement and productivity across your ranch.</p></div><span class="cr-round-arrow" aria-hidden="true">↗</span></a>
-          <a href="/register-organization" class="cr-feature cr-reveal" data-accent="green"><img src="/frontend/public/images/landing-v2/breeding.webp" alt="Livestock with their young" loading="lazy"><div class="cr-feature-copy"><span class="cr-feature-icon">♧</span><h3>Breeding & Routine Tracking</h3><p>Organize breeding, animal care, daily tasks and scheduled operations.</p></div><span class="cr-round-arrow" aria-hidden="true">↗</span></a>
-          <a href="/register-organization" class="cr-feature cr-reveal" data-accent="sage"><img src="/frontend/public/images/landing-v2/feed.webp" alt="Feed and agricultural stock" loading="lazy"><div class="cr-feature-copy"><span class="cr-feature-icon">▣</span><h3>Feed & Stock Control</h3><p>Monitor feed, inventory, purchasing and supplies without losing track.</p></div><span class="cr-round-arrow" aria-hidden="true">↗</span></a>
-          <a id="feature-crops" href="/register-organization" class="cr-feature cr-reveal" data-accent="olive"><img src="/frontend/public/images/landing-v2/crop-projects.webp" alt="Productive planted crop rows" loading="lazy"><div class="cr-feature-copy"><span class="cr-feature-icon">❦</span><h3>Crop Projects & Trials</h3><p>Plan fields, planting, crop inputs, harvests and farm performance.</p></div><span class="cr-round-arrow" aria-hidden="true">↗</span></a>
-          <a id="feature-gardens" href="/register-organization" class="cr-feature cr-reveal" data-accent="olive"><img src="/frontend/public/images/landing-v2/garden-work.webp" alt="Managed vegetable garden beds" loading="lazy"><div class="cr-feature-copy"><span class="cr-feature-icon">✿</span><h3>Gardening Operations</h3><p>Manage garden areas, nursery care, watering, inspections and maintenance.</p></div><span class="cr-round-arrow" aria-hidden="true">↗</span></a>
-          <a href="/register-organization" class="cr-feature cr-reveal" data-accent="green"><img src="/frontend/public/images/landing-v2/finance.webp" alt="Agricultural business growth" loading="lazy"><div class="cr-feature-copy"><span class="cr-feature-icon">▥</span><h3>Financial Reports</h3><p>Understand costs, expenses and performance with reliable records.</p></div><span class="cr-round-arrow" aria-hidden="true">↗</span></a>
-          <a href="/register-organization" class="cr-feature cr-reveal" data-accent="orange"><img src="/frontend/public/images/landing-v2/machinery.webp" alt="Farm machinery at work" loading="lazy"><div class="cr-feature-copy"><span class="cr-feature-icon">⚙</span><h3>Machinery</h3><p>Keep track of assets, usage, fuel, maintenance and service schedules.</p></div><span class="cr-round-arrow" aria-hidden="true">↗</span></a>
-          <a href="/register-organization" class="cr-feature cr-reveal" data-accent="green"><img src="/frontend/public/images/landing-v2/organizations.webp" alt="Ranch buildings for agricultural organizations" loading="lazy"><div class="cr-feature-copy"><span class="cr-feature-icon">♧</span><h3>Multi-Organization Tools</h3><p>Bring teams, permissions and organization management together.</p></div><span class="cr-round-arrow" aria-hidden="true">↗</span></a>
+    <section class="cr3-categories cr3-section" id="solutions" aria-labelledby="cr3-sol-title">
+      <div class="cr3-container">
+        <div class="cr3-section-head cr3-reveal"><div><span class="cr3-kicker">BUILT AROUND YOUR OPERATION</span><h2 id="cr3-sol-title">One platform. Many possibilities.</h2><p>Explore connected tools for the work that keeps agricultural businesses moving.</p></div><a class="cr3-text-link" href="#features">Discover all features <svg><use href="#cr3-arrow"/></svg></a></div>
+        <div class="cr3-tab-grid" role="list" aria-label="Agricultural solutions">
+          <a class="cr3-tab cr3-reveal" role="listitem" href="#livestock"><img loading="lazy" decoding="async" src="/frontend/public/images/landing-v3/livestock-landscape.webp" width="1800" height="430" alt="Livestock on green pasture"><span>Livestock</span><svg><use href="#cr3-diagonal"/></svg></a>
+          <a class="cr3-tab cr3-reveal" role="listitem" href="#crops"><img loading="lazy" decoding="async" src="/frontend/public/images/landing-v3/crops-landscape.webp" width="1800" height="430" alt="Well tended growing crops"><span>Crops</span><svg><use href="#cr3-diagonal"/></svg></a>
+          <a class="cr3-tab cr3-reveal" role="listitem" href="#crops"><img loading="lazy" decoding="async" src="/frontend/public/images/landing-v3/gardening-landscape.webp" width="1800" height="430" alt="Organized vegetable gardens"><span>Gardening</span><svg><use href="#cr3-diagonal"/></svg></a>
+          <a class="cr3-tab cr3-reveal" role="listitem" href="#resources"><img loading="lazy" decoding="async" src="/frontend/public/images/landing-v3/finance-landscape.webp" width="1800" height="430" alt="Agricultural inventory storage"><span>Finances</span><svg><use href="#cr3-diagonal"/></svg></a>
+          <a class="cr3-tab cr3-reveal" role="listitem" href="#machinery"><img loading="lazy" decoding="async" src="/frontend/public/images/landing-v3/machinery-landscape.webp" width="1800" height="430" alt="Tractor working the land"><span>Machinery</span><svg><use href="#cr3-diagonal"/></svg></a>
+          <a class="cr3-tab cr3-reveal" role="listitem" href="#organization"><img loading="lazy" decoding="async" src="/frontend/public/images/landing-v3/team-landscape.webp" width="1800" height="430" alt="Ranch buildings"><span>Teams</span><svg><use href="#cr3-diagonal"/></svg></a>
         </div>
       </div>
     </section>
 
-
-    <section id="why-cape" class="cr-editorial-intro" aria-labelledby="cr-editorial-title"><div class="cr-wrap cr-editorial-layout"><div class="cr-reveal"><span class="cr-kicker">WHY CONNECTED OPERATIONS MATTER</span><h2 id="cr-editorial-title">More than software.<br><em>A better rhythm for your land.</em></h2></div><div class="cr-reveal"><p>When a ranch or farm grows, the little details become the big picture. Cape Ranch helps you connect the everyday tasks behind production with the oversight needed to plan ahead.</p><a class="cr-link" href="/register-organization">Start building your workspace <span aria-hidden="true">↗</span></a></div></div></section>
-    <div id="in-depth-features" class="cr-spotlights" aria-label="Explore Cape Ranch capabilities in detail">
-
-      <section class="cr-spotlight cr-tone-cream" id="connected-livestock" aria-labelledby="connected-livestock-title">
-        <div class="cr-wrap cr-spotlight-layout">
-          <div class="cr-spotlight-photo cr-reveal"><img src="/frontend/public/images/landing-v2/herd.webp" width="1050" height="740" loading="lazy" decoding="async" alt="Healthy livestock grazing together on managed pasture"><span class="cr-spotlight-image-label"><span class="cr-image-dot"></span>Livestock &amp; ranch operations</span><span class="cr-spotlight-photo-index" aria-hidden="true">01</span></div>
-          <div class="cr-spotlight-content">
-            <div class="cr-spotlight-top cr-reveal"><span class="cr-spotlight-kicker">HERD INTELLIGENCE · RANCHING</span><span class="cr-spotlight-rule" aria-hidden="true"></span></div>
-            <h2 class="cr-reveal" id="connected-livestock-title">A clearer picture of every animal.</h2>
-            <p class="cr-spotlight-description cr-reveal">From your first purchase to daily care and eventual sale, livestock records should tell one complete story. Cape Ranch helps your team follow animal movements, weight changes and routine work without losing the operational history behind each decision.</p>
-            <div class="cr-spotlight-minis" data-stagger-grid><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">01</span><div><h3>Individual records</h3><p>Keep animal details and histories easier to locate.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">02</span><div><h3>Routine care</h3><p>Record feed, movement, veterinary and weighing activity.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">03</span><div><h3>Sales insight</h3><p>Review attributable costs alongside sale decisions.</p></div></article></div>
-            <div class="cr-spotlight-actions cr-reveal"><a class="cr-spotlight-cta" href="/register-organization">Get started <span aria-hidden="true">↗</span></a><a class="cr-spotlight-secondary" href="#feature-herd">Explore livestock tools <span aria-hidden="true">→</span></a></div>
-          </div>
+    <div id="features" class="cr3-feature-chapters">
+      <section class="cr3-band cr3-band-cream" id="livestock" aria-labelledby="cr3-livestock-title">
+        <div class="cr3-container cr3-band-inner">
+          <div class="cr3-band-visual cr3-reveal"><img src="/frontend/public/images/landing-v3/livestock-landscape.webp" width="1800" height="430" alt="Healthy cattle cared for on a working ranch" loading="lazy" decoding="async"><span class="cr3-image-label">01 / LIVESTOCK & ANIMAL CARE</span></div>
+          <div class="cr3-band-info cr3-reveal"><span class="cr3-kicker">KNOW YOUR HERD</span><h2 id="cr3-livestock-title">Every animal. Every detail. <em>One clear picture.</em></h2><p>Connect animal records to the activities behind a productive ranch. Track herds, health observations, movements and the care that goes into every stage.</p><div class="cr3-mini-grid"><div class="cr3-mini"><svg><use href="#cr3-check"/></svg><span>Animal registry</span></div><div class="cr3-mini"><svg><use href="#cr3-check"/></svg><span>Health & breeding</span></div><div class="cr3-mini"><svg><use href="#cr3-check"/></svg><span>Weights & sales</span></div></div><a href="/register-organization" class="cr3-text-link">Explore livestock tools <svg><use href="#cr3-arrow"/></svg></a></div>
         </div>
       </section>
-
-      <section class="cr-spotlight cr-tone-green cr-spotlight--reverse" id="connected-daily-work" aria-labelledby="connected-daily-work-title">
-        <div class="cr-wrap cr-spotlight-layout">
-          <div class="cr-spotlight-photo cr-reveal"><img src="/frontend/public/images/landing-v2/feed.webp" width="1050" height="740" loading="lazy" decoding="async" alt="Feed resources and agricultural supplies for daily ranch work"><span class="cr-spotlight-image-label"><span class="cr-image-dot"></span>Tasks, shifts &amp; field coordination</span><span class="cr-spotlight-photo-index" aria-hidden="true">02</span></div>
-          <div class="cr-spotlight-content">
-            <div class="cr-spotlight-top cr-reveal"><span class="cr-spotlight-kicker">DAILY WORK · ROUTINES</span><span class="cr-spotlight-rule" aria-hidden="true"></span></div>
-            <h2 class="cr-reveal" id="connected-daily-work-title">Make every working day feel organized.</h2>
-            <p class="cr-spotlight-description cr-reveal">Good operations are built on dependable routines. Give each team a practical way to see what needs doing, capture completed work and hand over the next shift with clarity. Keep feeding, watering, checks and maintenance connected to the people responsible.</p>
-            <div class="cr-spotlight-minis" data-stagger-grid><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">01</span><div><h3>Plan the day</h3><p>Prepare recurring duties and task assignments.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">02</span><div><h3>Know what happened</h3><p>Turn completed work into useful activity records.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">03</span><div><h3>Stay accountable</h3><p>Give managers a clearer view of outstanding tasks.</p></div></article></div>
-            <div class="cr-spotlight-actions cr-reveal"><a class="cr-spotlight-cta" href="/register-organization">Get started <span aria-hidden="true">↗</span></a><a class="cr-spotlight-secondary" href="#how-it-works">Bring your team together <span aria-hidden="true">→</span></a></div>
-          </div>
+      <section class="cr3-band cr3-band-dark cr3-band-reverse" id="operations" aria-labelledby="cr3-operations-title">
+        <div class="cr3-container cr3-band-inner">
+          <div class="cr3-band-visual cr3-reveal"><img src="/frontend/public/images/landing-v3/routines-landscape.webp" width="1800" height="430" alt="A managed cattle herd during daily operations" loading="lazy" decoding="async"><span class="cr3-image-label">02 / DAILY OPERATIONS</span></div>
+          <div class="cr3-band-info cr3-reveal"><span class="cr3-kicker">SIMPLIFY THE EVERYDAY</span><h2 id="cr3-operations-title">Run the day with <em>purpose and precision.</em></h2><p>Turn busy routines into coordinated work. Plan daily responsibilities, follow what is due and create a consistent rhythm from the morning shift to end-of-day reporting.</p><div class="cr3-mini-grid"><div class="cr3-mini"><svg><use href="#cr3-clock"/></svg><span>Planned routines</span></div><div class="cr3-mini"><svg><use href="#cr3-people"/></svg><span>Staff assignments</span></div><div class="cr3-mini"><svg><use href="#cr3-check"/></svg><span>Task completion</span></div></div><a href="/register-organization" class="cr3-text-link">Explore daily operations <svg><use href="#cr3-arrow"/></svg></a></div>
         </div>
       </section>
-
-      <section class="cr-spotlight cr-tone-white" id="connected-land" aria-labelledby="connected-land-title">
-        <div class="cr-wrap cr-spotlight-layout">
-          <div class="cr-spotlight-photo cr-reveal"><img src="/frontend/public/images/landing-v2/gardening.webp" width="1050" height="740" loading="lazy" decoding="async" alt="Gardener tending vibrant vegetable beds"><span class="cr-spotlight-image-label"><span class="cr-image-dot"></span>Crop and garden management</span><span class="cr-spotlight-photo-index" aria-hidden="true">03</span></div>
-          <div class="cr-spotlight-content">
-            <div class="cr-spotlight-top cr-reveal"><span class="cr-spotlight-kicker">CROPS · GARDENS · LAND</span><span class="cr-spotlight-rule" aria-hidden="true"></span></div>
-            <h2 class="cr-reveal" id="connected-land-title">Connect what you plant with how it grows.</h2>
-            <p class="cr-spotlight-description cr-reveal">Fields, gardens and nursery spaces need more than a simple checklist. Keep locations, planting dates, irrigation, supplies and inspections linked so the story of each growing cycle is visible to the entire team.</p>
-            <div class="cr-spotlight-minis" data-stagger-grid><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">01</span><div><h3>Plan growing cycles</h3><p>Capture planting, nursery, and harvest activities.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">02</span><div><h3>Care for the land</h3><p>Track watering, plant health, and follow-up inspections.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">03</span><div><h3>See the progress</h3><p>Turn observations into a more useful operational view.</p></div></article></div>
-            <div class="cr-spotlight-actions cr-reveal"><a class="cr-spotlight-cta" href="/register-organization">Get started <span aria-hidden="true">↗</span></a><a class="cr-spotlight-secondary" href="#feature-gardens">Discover crop &amp; garden tools <span aria-hidden="true">→</span></a></div>
-          </div>
+      <section class="cr3-band cr3-band-white" id="crops" aria-labelledby="cr3-crops-title">
+        <div class="cr3-container cr3-band-inner">
+          <div class="cr3-band-visual cr3-reveal"><img src="/frontend/public/images/landing-v3/crops-landscape.webp" width="1800" height="430" alt="Crops growing in uniform rows in sunlight" loading="lazy" decoding="async"><span class="cr3-image-label">03 / CROPS & GARDENS</span></div>
+          <div class="cr3-band-info cr3-reveal"><span class="cr3-kicker">CULTIVATE BETTER PLANS</span><h2 id="cr3-crops-title">From the first seed to <em>lasting growth.</em></h2><p>Bring fields and gardens together with practical planting plans, nursery tracking, crop activities and maintenance records that help your teams stay organized.</p><div class="cr3-mini-grid"><div class="cr3-mini"><svg><use href="#cr3-leaf"/></svg><span>Crop projects</span></div><div class="cr3-mini"><svg><use href="#cr3-drops"/></svg><span>Watering & care</span></div><div class="cr3-mini"><svg><use href="#cr3-chart"/></svg><span>Plant performance</span></div></div><a href="/register-organization" class="cr3-text-link">Explore crops & gardens <svg><use href="#cr3-arrow"/></svg></a></div>
         </div>
       </section>
-
-      <section class="cr-spotlight cr-tone-orange cr-spotlight--reverse" id="connected-costs" aria-labelledby="connected-costs-title">
-        <div class="cr-wrap cr-spotlight-layout">
-          <div class="cr-spotlight-photo cr-reveal"><img src="/frontend/public/images/landing-v2/finance.webp" width="1050" height="740" loading="lazy" decoding="async" alt="Agricultural business reports and financial analysis on a desk"><span class="cr-spotlight-image-label"><span class="cr-image-dot"></span>Resource and cost visibility</span><span class="cr-spotlight-photo-index" aria-hidden="true">04</span></div>
-          <div class="cr-spotlight-content">
-            <div class="cr-spotlight-top cr-reveal"><span class="cr-spotlight-kicker">SUPPLIES · COSTS · FINANCE</span><span class="cr-spotlight-rule" aria-hidden="true"></span></div>
-            <h2 class="cr-reveal" id="connected-costs-title">Know what goes into every result.</h2>
-            <p class="cr-spotlight-description cr-reveal">Every bag of feed, hour of labor and equipment service is part of your operation. Bring purchases, stock and running expenses into the same conversation so managers can understand resource use and make better-informed cost decisions.</p>
-            <div class="cr-spotlight-minis" data-stagger-grid><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">01</span><div><h3>Control supplies</h3><p>Organize inventory, quantities and records.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">02</span><div><h3>Follow the spend</h3><p>Record attributable operational expenses.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">03</span><div><h3>Understand decisions</h3><p>Put activity and financial context side by side.</p></div></article></div>
-            <div class="cr-spotlight-actions cr-reveal"><a class="cr-spotlight-cta" href="/register-organization">Get started <span aria-hidden="true">↗</span></a><a class="cr-spotlight-secondary" href="#platform">Explore resources &amp; reports <span aria-hidden="true">→</span></a></div>
-          </div>
+      <section class="cr3-band cr3-band-orange cr3-band-reverse" id="resources" aria-labelledby="cr3-resources-title">
+        <div class="cr3-container cr3-band-inner">
+          <div class="cr3-band-visual cr3-reveal"><img src="/frontend/public/images/landing-v3/finance-landscape.webp" width="1800" height="430" alt="Well-organized agricultural supplies and resources" loading="lazy" decoding="async"><span class="cr3-image-label">04 / FINANCES & RESOURCES</span></div>
+          <div class="cr3-band-info cr3-reveal"><span class="cr3-kicker">MORE CONTROL, LESS GUESSWORK</span><h2 id="cr3-resources-title">See where resources go. <em>Know what they deliver.</em></h2><p>Connect the supplies, expenses and financial records that shape operational performance. Understand costs before they become surprises and keep your inventory organized.</p><div class="cr3-mini-grid"><div class="cr3-mini"><svg><use href="#cr3-box"/></svg><span>Inventory control</span></div><div class="cr3-mini"><svg><use href="#cr3-chart"/></svg><span>Cost visibility</span></div><div class="cr3-mini"><svg><use href="#cr3-check"/></svg><span>Financial records</span></div></div><a href="/register-organization" class="cr3-text-link">Explore finance & inventory <svg><use href="#cr3-arrow"/></svg></a></div>
         </div>
       </section>
-
-      <section class="cr-spotlight cr-tone-cream" id="connected-assets" aria-labelledby="connected-assets-title">
-        <div class="cr-wrap cr-spotlight-layout">
-          <div class="cr-spotlight-photo cr-reveal"><img src="/frontend/public/images/landing-v2/machinery.webp" width="1050" height="740" loading="lazy" decoding="async" alt="Tractor working in a golden agricultural field"><span class="cr-spotlight-image-label"><span class="cr-image-dot"></span>Machinery and project workflows</span><span class="cr-spotlight-photo-index" aria-hidden="true">05</span></div>
-          <div class="cr-spotlight-content">
-            <div class="cr-spotlight-top cr-reveal"><span class="cr-spotlight-kicker">EQUIPMENT · PROJECTS · ASSETS</span><span class="cr-spotlight-rule" aria-hidden="true"></span></div>
-            <h2 class="cr-reveal" id="connected-assets-title">Keep machinery and projects moving.</h2>
-            <p class="cr-spotlight-description cr-reveal">A busy property relies on far more than livestock or crops. Track machinery service schedules, fuel use, project milestones and the practical work that keeps equipment dependable and expansion on course.</p>
-            <div class="cr-spotlight-minis" data-stagger-grid><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">01</span><div><h3>Service with purpose</h3><p>Keep maintenance activities and service records visible.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">02</span><div><h3>Plan better</h3><p>Organize equipment and project responsibilities.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">03</span><div><h3>Reduce guesswork</h3><p>Find operational history when it matters.</p></div></article></div>
-            <div class="cr-spotlight-actions cr-reveal"><a class="cr-spotlight-cta" href="/register-organization">Get started <span aria-hidden="true">↗</span></a><a class="cr-spotlight-secondary" href="#features">Explore machinery features <span aria-hidden="true">→</span></a></div>
-          </div>
+      <section class="cr3-band cr3-band-cream" id="machinery" aria-labelledby="cr3-machinery-title">
+        <div class="cr3-container cr3-band-inner">
+          <div class="cr3-band-visual cr3-reveal"><img src="/frontend/public/images/landing-v3/machinery-landscape.webp" width="1800" height="430" alt="Agricultural tractor carrying out field operations" loading="lazy" decoding="async"><span class="cr3-image-label">05 / MACHINERY & PROJECTS</span></div>
+          <div class="cr3-band-info cr3-reveal"><span class="cr3-kicker">KEEP EVERY ASSET WORKING</span><h2 id="cr3-machinery-title">Keep your equipment ready and <em>your plans moving.</em></h2><p>Manage equipment information, service work, operational use and farm projects without splitting important details across scattered notebooks and spreadsheets.</p><div class="cr3-mini-grid"><div class="cr3-mini"><svg><use href="#cr3-gear"/></svg><span>Maintenance</span></div><div class="cr3-mini"><svg><use href="#cr3-clock"/></svg><span>Schedules</span></div><div class="cr3-mini"><svg><use href="#cr3-chart"/></svg><span>Project progress</span></div></div><a href="/register-organization" class="cr3-text-link">Explore machinery tools <svg><use href="#cr3-arrow"/></svg></a></div>
         </div>
       </section>
-
-      <section class="cr-spotlight cr-tone-green cr-spotlight--reverse" id="connected-leadership" aria-labelledby="connected-leadership-title">
-        <div class="cr-wrap cr-spotlight-layout">
-          <div class="cr-spotlight-photo cr-reveal"><img src="/frontend/public/images/landing-v2/organizations.webp" width="1050" height="740" loading="lazy" decoding="async" alt="Buildings and land on an organized modern ranch"><span class="cr-spotlight-image-label"><span class="cr-image-dot"></span>Connected organization management</span><span class="cr-spotlight-photo-index" aria-hidden="true">06</span></div>
-          <div class="cr-spotlight-content">
-            <div class="cr-spotlight-top cr-reveal"><span class="cr-spotlight-kicker">TEAMS · ORGANIZATIONS · REPORTING</span><span class="cr-spotlight-rule" aria-hidden="true"></span></div>
-            <h2 class="cr-reveal" id="connected-leadership-title">Your whole operation, working as one.</h2>
-            <p class="cr-spotlight-description cr-reveal">Agricultural businesses grow through people, not just records. Give staff access appropriate to their role, coordinate activity across management areas and bring leaders a clearer view of what is happening on the ground.</p>
-            <div class="cr-spotlight-minis" data-stagger-grid><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">01</span><div><h3>Give people clarity</h3><p>Support role-based access and staff workflows.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">02</span><div><h3>See across operations</h3><p>Review different modules from one platform.</p></div></article><article class="cr-spotlight-mini cr-reveal"><span class="cr-mini-number">03</span><div><h3>Lead with evidence</h3><p>Use reporting to make informed next steps.</p></div></article></div>
-            <div class="cr-spotlight-actions cr-reveal"><a class="cr-spotlight-cta" href="/register-organization">Get started <span aria-hidden="true">↗</span></a><a class="cr-spotlight-secondary" href="#platform">See the platform in action <span aria-hidden="true">→</span></a></div>
-          </div>
+      <section class="cr3-band cr3-band-dark cr3-band-reverse" id="organization" aria-labelledby="cr3-organization-title">
+        <div class="cr3-container cr3-band-inner">
+          <div class="cr3-band-visual cr3-reveal"><img src="/frontend/public/images/landing-v3/team-landscape.webp" width="1800" height="430" alt="Purpose-built ranch buildings and facilities" loading="lazy" decoding="async"><span class="cr3-image-label">06 / PEOPLE & OVERSIGHT</span></div>
+          <div class="cr3-band-info cr3-reveal"><span class="cr3-kicker">BUILT FOR WORKING TOGETHER</span><h2 id="cr3-organization-title">The right information for <em>the right people.</em></h2><p>Bring organization setup, staff access and management reporting into one shared operating environment. Make responsibilities clearer and decisions easier to support.</p><div class="cr3-mini-grid"><div class="cr3-mini"><svg><use href="#cr3-people"/></svg><span>Team roles</span></div><div class="cr3-mini"><svg><use href="#cr3-shield"/></svg><span>Access controls</span></div><div class="cr3-mini"><svg><use href="#cr3-chart"/></svg><span>Management reports</span></div></div><a href="/register-organization" class="cr3-text-link">Explore organization tools <svg><use href="#cr3-arrow"/></svg></a></div>
         </div>
       </section>
     </div>
 
-    <section id="platform" class="cr-platform cr-section" aria-labelledby="platform-title">
-      <div class="cr-wrap cr-platform-layout">
-        <div class="cr-platform-text cr-reveal"><span class="cr-kicker">ONE CLEAR VIEW</span><h2 id="platform-title">Turn your day-to-day<br>into <em>long-term success.</em></h2><p>Say goodbye to scattered notebooks and disconnected spreadsheets. Keep your work organized while the platform turns records into insights you can act on.</p><ul class="cr-checks"><li>Save time with connected workflows</li><li>Make better decisions with real records</li><li>Keep your team aligned and informed</li><li>Spot trends and understand costs</li><li>Bring everything into one secure place</li></ul><a class="cr-btn cr-btn-orange" href="/register-organization">Get started <span aria-hidden="true">↗</span></a></div>
-        <div class="cr-dashboard-scene cr-reveal"><div class="cr-dashboard" aria-label="Illustrative preview of a Cape Ranch analytics dashboard"><aside class="cr-dash-sidebar"><div class="cr-dash-brand">⌁ Cape Ranch</div><span class="active">▦ Dashboard</span><span>♜ Livestock</span><span>❦ Crops</span><span>✿ Gardening</span><span>▥ Finance</span><span>⚙ Machinery</span><span>▣ Reports</span></aside><div class="cr-dash-main"><div class="cr-dash-head"><div><b>Ranch Overview</b><small>Your operation at a glance</small></div><span class="cr-dash-period">This month⌄</span></div><div class="cr-dash-kpis"><div><span>Herd records</span><strong>↗</strong><small>Stay organized</small></div><div><span>Crop records</span><strong>❦</strong><small>Plan ahead</small></div><div><span>Daily tasks</span><strong>✓</strong><small>Stay on schedule</small></div><div><span>Reports</span><strong>▥</strong><small>View trends</small></div></div><div class="cr-dash-chart"><div class="cr-dash-chart-title"><b>Operational trends</b><small>Illustrative preview</small></div><svg viewBox="0 0 450 150" preserveAspectRatio="none" role="img" aria-label="Illustrative upward-trending data line"><path d="M0 123H450M0 85H450M0 47H450" stroke="#e4ece7" stroke-width="1" stroke-dasharray="4 5"/><path d="M0 123 L37 110 L74 117 L112 88 L148 95 L186 70 L222 76 L260 45 L296 58 L333 32 L371 44 L408 19 L450 24 L450 150 L0 150Z" fill="#ccecd8" opacity=".8"/><path d="M0 123 L37 110 L74 117 L112 88 L148 95 L186 70 L222 76 L260 45 L296 58 L333 32 L371 44 L408 19 L450 24" stroke="#238056" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="cr-dash-months"><span>Jan</span><span>Mar</span><span>May</span><span>Jul</span><span>Sep</span><span>Dec</span></div></div></div></div><div class="cr-phone"><div class="cr-phone-notch"></div><strong>Cape Ranch</strong><p>Good morning!</p><span>Your ranch at a glance</span><div class="cr-phone-metric">❦ <b>Fields & crops</b><small>Overview</small></div><div class="cr-phone-metric">♜ <b>Livestock</b><small>Records</small></div><div class="cr-phone-metric">✓ <b>Today's tasks</b><small>On track</small></div><div class="cr-phone-chart"></div><div class="cr-phone-line"></div></div></div>
-        <p class="cr-preview-label">Product visualization — illustrative, not live customer data.</p>
+    <section class="cr3-platform cr3-section" id="platform" aria-labelledby="cr3-platform-title">
+      <div class="cr3-container cr3-platform-grid">
+        <div class="cr3-platform-copy cr3-reveal"><span class="cr3-kicker">YOUR OPERATION, IN PERSPECTIVE</span><h2 id="cr3-platform-title">From daily details to <em>smarter decisions.</em></h2><p>As your team records the work, Cape Ranch helps organize the information behind your operation. Spend less time searching for context and more time moving your business forward.</p><ul><li><svg><use href="#cr3-check"/></svg> Understand work across departments</li><li><svg><use href="#cr3-check"/></svg> Bring records into one connected view</li><li><svg><use href="#cr3-check"/></svg> See trends and emerging priorities</li><li><svg><use href="#cr3-check"/></svg> Export reports when you need them</li></ul><a class="cr3-btn cr3-btn-green" href="/register-organization">Build your workspace <svg><use href="#cr3-arrow"/></svg></a></div>
+        <div class="cr3-ui-showcase cr3-reveal" aria-label="Illustrative Cape Ranch dashboard preview">
+          <div class="cr3-ui-main"><div class="cr3-ui-side"><img src="/frontend/public/images/landing-v3/cape-ranch-logo.webp" width="485" height="80" alt="Cape Ranch"><span class="selected">▤ &nbsp; Overview</span><span>♧ &nbsp; Livestock</span><span>❦ &nbsp; Crops</span><span>◫ &nbsp; Gardening</span><span>▣ &nbsp; Inventory</span><span>▥ &nbsp; Reports</span></div><div class="cr3-ui-content"><div class="cr3-ui-top"><div><strong>Operations overview</strong><small>A connected view of your organization</small></div><span>DEMO</span></div><div class="cr3-ui-tiles"><div><small>Livestock</small><strong>Herd records</strong><i>↗</i></div><div><small>Fields</small><strong>Crop activity</strong><i>↗</i></div><div><small>Today's work</small><strong>Routine tasks</strong><i>↗</i></div></div><div class="cr3-ui-panel"><div class="cr3-ui-panel-title"><b>Activity trends</b><small>Illustrative preview — not live data</small></div><div class="cr3-ui-graph" aria-hidden="true"><span style="height:32%"></span><span style="height:51%"></span><span style="height:43%"></span><span style="height:65%"></span><span style="height:52%"></span><span style="height:78%"></span><span style="height:61%"></span><span style="height:86%"></span><span style="height:74%"></span><span style="height:93%"></span></div><div class="cr3-ui-months"><span>Jan</span><span>Mar</span><span>May</span><span>Jul</span><span>Sep</span><span>Nov</span></div></div></div></div>
+          <div class="cr3-ui-mobile"><div class="cr3-ui-phone-bar"></div><span class="cr3-ui-phone-label">CAPE RANCH</span><strong>Good morning.</strong><small>Your operations at a glance</small><div class="cr3-phone-mini"><svg><use href="#cr3-leaf"/></svg><span>Field activity</span><b>↗</b></div><div class="cr3-phone-mini"><svg><use href="#cr3-people"/></svg><span>My tasks</span><b>✓</b></div><div class="cr3-phone-mini"><svg><use href="#cr3-chart"/></svg><span>Reports</span><b>↗</b></div><div class="cr3-ui-phone-home"></div></div>
+        </div>
       </div>
     </section>
 
-    <section id="how-it-works" class="cr-section cr-steps"><div class="cr-wrap"><div class="cr-section-heading cr-reveal"><span class="cr-kicker">SIMPLE FROM DAY ONE</span><h2>A simpler way to a more<br>productive operation.</h2><p>Go from setting up your organization to tracking meaningful progress, step by step.</p></div><div class="cr-step-grid" data-stagger-grid><div class="cr-step cr-reveal"><span>01</span><h3>Get started</h3><p>Create your organization and set up your workspace.</p></div><div class="cr-step cr-reveal"><span>02</span><h3>Add your records</h3><p>Bring in livestock, crops, equipment and team details.</p></div><div class="cr-step cr-reveal"><span>03</span><h3>Put it to work</h3><p>Manage daily operations, tasks and activity records.</p></div><div class="cr-step cr-reveal"><span>04</span><h3>Grow with confidence</h3><p>Make better decisions using insights from your work.</p></div></div></div></section>
+    <section class="cr3-process cr3-section" id="how-it-works" aria-labelledby="cr3-how-title">
+      <div class="cr3-container"><div class="cr3-section-head cr3-reveal"><div><span class="cr3-kicker">SIMPLE TO GET MOVING</span><h2 id="cr3-how-title">A simpler way to a more productive operation.</h2><p>Get started with the essentials, then grow into the connected workflows your team needs.</p></div></div><div class="cr3-steps">
+        <div class="cr3-step cr3-reveal"><div class="cr3-step-number">01</div><h3>Set up your organization</h3><p>Create your workspace and configure your operation.</p></div>
+        <div class="cr3-step cr3-reveal"><div class="cr3-step-number">02</div><h3>Choose your tools</h3><p>Use the modules that fit your work and priorities.</p></div>
+        <div class="cr3-step cr3-reveal"><div class="cr3-step-number">03</div><h3>Bring your data together</h3><p>Record activity across livestock, crops, inventory and more.</p></div>
+        <div class="cr3-step cr3-reveal"><div class="cr3-step-number">04</div><h3>Grow with confidence</h3><p>Use your records and reports to guide better decisions.</p></div>
+      </div></div>
+    </section>
 
-    <section class="cr-stories" aria-labelledby="who-title"><div class="cr-stories-bg"></div><div class="cr-wrap"><div class="cr-stories-header cr-reveal"><div><span class="cr-kicker">MADE FOR REAL AGRICULTURE</span><h2 id="who-title">Built for people who work the land.</h2></div><a class="cr-link" href="#questions">Frequently asked questions ↗</a></div><div class="cr-audience-grid" data-stagger-grid><article class="cr-audience cr-reveal"><span>01 / RANCHES</span><h3>Livestock producers</h3><p>From individual animal records to coordinated care, keep your ranch moving forward.</p></article><article class="cr-audience cr-reveal"><span>02 / FARMS</span><h3>Crop & garden teams</h3><p>Connect planting plans, maintenance, input use and harvest activities in one place.</p></article><article class="cr-audience cr-reveal"><span>03 / OPERATIONS</span><h3>Growing organizations</h3><p>Give staff clear responsibilities and leadership a better picture of daily work.</p></article></div></div></section>
+    <section class="cr3-faq cr3-section" id="faq" aria-labelledby="cr3-faq-title"><div class="cr3-container cr3-faq-grid"><div class="cr3-faq-intro cr3-reveal"><span class="cr3-kicker">COMMON QUESTIONS</span><h2 id="cr3-faq-title">Questions? <em>Good thinking.</em></h2><p>Get clear answers about how Cape Ranch fits into your daily operation.</p><a href="/register-organization" class="cr3-text-link">Start with Cape Ranch <svg><use href="#cr3-arrow"/></svg></a></div><div class="cr3-faq-list cr3-reveal">
+      <details><summary>What is Cape Ranch?</summary><p>Cape Ranch is a modular agricultural management platform. It connects ranching, crop activities, gardening, resources, machinery, staff workflows and reporting in one web application.</p></details>
+      <details><summary>Who can use Cape Ranch?</summary><p>Ranch operators, farm managers, agricultural organizations and staff teams can use modules and roles appropriate to their responsibilities.</p></details>
+      <details><summary>Can I manage different operations together?</summary><p>Yes. The platform includes several connected modules. Your organization's subscription and assigned permissions determine which tools are available.</p></details>
+      <details><summary>Do staff members have their own access?</summary><p>Organizations can work with staff accounts and role-based permissions. Administrators control authorized access for their teams.</p></details>
+      <details><summary>How do I get started?</summary><p>Choose Get started to register your organization, or Sign in if you already have an account.</p></details>
+    </div></div></section>
 
-    <section id="questions" class="cr-section cr-faq"><div class="cr-wrap cr-faq-layout"><div class="cr-reveal"><span class="cr-kicker">COMMON QUESTIONS</span><h2>Frequently asked<br>questions.</h2><p>Learn what Cape Ranch can do and how to get started with your operation.</p><div class="cr-faq-list"><details><summary>What is Cape Ranch?<span>+</span></summary><p>Cape Ranch is a modular agricultural management platform for organizing livestock, crop farming, gardening, machinery, inventory, staff, and reports.</p></details><details><summary>Who is Cape Ranch designed for?<span>+</span></summary><p>It is designed for ranches, farms, agricultural businesses, operational teams, and organizations that want connected records and clearer processes.</p></details><details><summary>Can multiple staff members use it?<span>+</span></summary><p>Yes. Organizations can manage staff roles and access permissions, subject to their subscription and the modules enabled for their organization.</p></details><details><summary>Can I choose which areas to manage?<span>+</span></summary><p>Cape Ranch is modular, so the areas available to an organization depend on its subscription and configuration.</p></details></div></div><aside class="cr-faq-cta cr-reveal"><img src="/frontend/public/images/landing-v2/seedling.webp" alt="Growing plants in managed soil" loading="lazy"><div><span class="cr-kicker">READY TO GET STARTED?</span><h3>Let's make every day on your farm count.</h3><p>Bring your operation into one connected workspace.</p><a class="cr-btn cr-btn-orange" href="/register-organization">Register your organization ↗</a></div></aside></div></section>
-
-    <section class="cr-final-cta"><div class="cr-wrap cr-final-content"><div><span class="cr-kicker">YOUR NEXT CHAPTER STARTS HERE</span><h2>Build a more productive,<br><em>connected tomorrow.</em></h2><p>Your animals, land, people and data deserve a smarter way to work.</p></div><a class="cr-btn cr-btn-orange cr-btn-large" href="/register-organization">Get started with Cape Ranch ↗</a></div></section>
+    <section class="cr3-final" aria-labelledby="cr3-final-title"><div class="cr3-final-backdrop"></div><div class="cr3-container cr3-final-content"><div class="cr3-reveal"><span class="cr3-kicker">A BETTER WAY TO MANAGE WHAT MATTERS</span><h2 id="cr3-final-title">A stronger operation <em>starts here.</em></h2><p>Bring your land, livestock, people and daily work together. Give your team the clarity to plan today and grow tomorrow.</p></div><div class="cr3-final-actions cr3-reveal"><a href="/register-organization" class="cr3-btn cr3-btn-orange">Get started <svg><use href="#cr3-arrow"/></svg></a><a href="/login" class="cr3-btn cr3-btn-outline-white">Already a member? Sign in</a></div></div></section>
   </main>
-  <footer class="cr-footer"><div class="cr-wrap cr-footer-grid"><div class="cr-footer-brand"><a class="cr-logo cr-footer-logo" href="/" aria-label="Cape Ranch home"><img class="cr-brand-image" src="/frontend/public/images/landing-v2/cape-ranch-logo.webp" alt="Cape Ranch" width="485" height="80" loading="lazy"></a><p>Modern tools for the people who grow, manage and care for our world.</p></div><div><strong>Explore</strong><a href="#solutions">Solutions</a><a href="#features">Features</a><a href="#platform">The platform</a><a href="#how-it-works">How it works</a></div><div><strong>Get started</strong><a href="/login">Sign in</a><a href="/register-organization">Register organization</a><a href="/staff-recovery">Staff recovery</a><a href="#questions">Questions</a></div><div><strong>About Cape Ranch</strong><p>Purpose-built for connected agricultural operations — from fieldwork to financial insight.</p><a class="cr-footer-back" href="#top">Back to top ↑</a></div></div><div class="cr-wrap cr-footer-bottom"><span>© <span data-current-year>2026</span> Cape Ranch. All rights reserved.</span><span>Land. Livestock. People. Progress.</span></div></footer>
-  <dialog class="cr-tour-dialog" id="cr-tour-dialog" aria-labelledby="cr-tour-title"><form method="dialog"><button class="cr-tour-close" aria-label="Close platform overview">×</button></form><span class="cr-kicker">EXPLORE THE PLATFORM</span><h2 id="cr-tour-title">One platform. Many connected workflows.</h2><p>Follow the journey from creating your organization to managing day-to-day operations and reviewing performance.</p><div class="cr-tour-panel"><div><strong>01</strong><h3>Register</h3><p>Set up your organization.</p></div><div><strong>02</strong><h3>Operate</h3><p>Record work, stock and activities.</p></div><div><strong>03</strong><h3>Understand</h3><p>Explore your reports and progress.</p></div></div><a class="cr-btn cr-btn-orange" href="/register-organization">Start with Cape Ranch ↗</a></dialog>
+
+  <footer class="cr3-footer"><div class="cr3-container cr3-footer-grid"><div class="cr3-footer-brand"><a href="/" aria-label="Cape Ranch home"><img src="/frontend/public/images/landing-v3/cape-ranch-logo.webp" width="485" height="80" alt="Cape Ranch"></a><p>Practical tools for a brighter agricultural tomorrow.</p></div><div><h3>Explore</h3><a href="#solutions">Solutions</a><a href="#features">Features</a><a href="#platform">The platform</a></div><div><h3>Get started</h3><a href="/register-organization">Register organization</a><a href="/login">Sign in</a><a href="/staff-recovery">Staff recovery</a></div><div><h3>Learn more</h3><a href="#how-it-works">How it works</a><a href="#faq">Frequently asked questions</a></div></div><div class="cr3-container cr3-footer-bottom"><span>© <span data-current-year>2026</span> Cape Ranch. All rights reserved.</span><span>A connected agricultural operations platform.</span></div></footer>
 </body>
 </html>
