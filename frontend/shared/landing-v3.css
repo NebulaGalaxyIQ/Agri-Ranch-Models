@@ -151,3 +151,89 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{color:inherit}h1,h2{font-family:Georgia,'Times 
  .cr3-hero h1{font-size:clamp(28px,8vw,33px)}
  .cr3-h1-long{font-size:.88em}
 }
+
+/* V3.3 — WORKING scroll reveal (V3.2 JS used these classes but supplied no
+   matching CSS); default remains visible when JS or observers are missing. */
+@media (prefers-reduced-motion: no-preference) {
+  .cr3-js.cr3-animate .cr3-reveal.cr3-waiting {
+    transition: opacity .66s cubic-bezier(.2,.75,.2,1),
+                transform .7s cubic-bezier(.18,.75,.22,1),
+                filter .66s ease;
+    transition-delay: var(--cr3-reveal-delay, 0ms);
+  }
+  .cr3-js .cr3-reveal.cr3-waiting:not(.cr3-is-visible) {
+    opacity: 0;
+    transform: translate3d(0, 25px, 0);
+    filter: blur(2px);
+    pointer-events: none;
+  }
+  .cr3-js .cr3-reveal.cr3-waiting.cr3-is-visible {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+/* Keep focus + mouse movement functional even while an entrance has just
+   finished; the reveal class is removed on transitionend in landing-v3.js. */
+.cr3-tab,
+.cr3-mini,
+.cr3-metric,
+.cr3-step,
+.cr3-faq-list details,
+.cr3-ui-tiles > div,
+.cr3-phone-mini {
+  transition: transform .28s cubic-bezier(.2,.75,.2,1),
+              box-shadow .28s ease,
+              background-color .28s ease,
+              border-color .28s ease;
+}
+.cr3-tab:hover,
+.cr3-tab:focus-visible {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(13,49,37,.26);
+}
+.cr3-tab:hover img,
+.cr3-tab:focus-visible img { transform: scale(1.09); filter: saturate(1.14) contrast(1.04); }
+.cr3-mini:hover,
+.cr3-mini:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(19,56,39,.16);
+  border-color: #9fceb1;
+  background: #fff;
+}
+.cr3-mini svg { transition: transform .28s ease, color .28s ease; }
+.cr3-mini:hover svg,
+.cr3-mini:focus-within svg { transform: scale(1.15) rotate(-5deg); color: #eb631c; }
+.cr3-band-dark .cr3-mini:hover,
+.cr3-band-dark .cr3-mini:focus-within {
+  background: rgba(255,255,255,.22);
+  border-color: rgba(255,255,255,.6);
+  box-shadow: 0 14px 30px rgba(2,23,17,.25);
+}
+.cr3-band-orange .cr3-mini:hover,
+.cr3-band-orange .cr3-mini:focus-within { background: #fff; border-color: #ecaa78; }
+.cr3-band-visual {
+  transition: transform .35s cubic-bezier(.2,.75,.2,1), box-shadow .35s ease;
+}
+.cr3-band-visual:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 19px 36px rgba(9,43,30,.24);
+}
+.cr3-band-visual img { transition: transform .65s cubic-bezier(.2,.75,.2,1), filter .45s ease; }
+.cr3-band-visual:hover img { transform: scale(1.065); filter: saturate(1.1) contrast(1.03); }
+.cr3-metric:hover { transform: translateY(-4px); }
+.cr3-metric:hover > strong { color: var(--cr3-orange); }
+.cr3-step:hover { transform: translateY(-5px); }
+.cr3-faq-list details:hover,
+.cr3-faq-list details:focus-within { transform: translateY(-2px); border-color: #c5d8c9; box-shadow: 0 10px 24px rgba(16,51,30,.12); }
+.cr3-ui-tiles > div:hover,
+.cr3-phone-mini:hover { transform: translateY(-3px); border-color: #add3b8; box-shadow: 0 8px 18px rgba(12,49,30,.12); }
+@media (prefers-reduced-motion: reduce) {
+  .cr3-js .cr3-reveal.cr3-waiting,
+  .cr3-js .cr3-reveal.cr3-waiting:not(.cr3-is-visible) {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    pointer-events: auto;
+  }
+}

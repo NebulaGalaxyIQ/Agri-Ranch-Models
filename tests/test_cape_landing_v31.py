@@ -52,5 +52,5 @@ class LandingV31(unittest.TestCase):
   for route in ['/login','/register-organization','/staff-recovery']:
    self.assertIn(route,p.links)
   self.assertIn('IntersectionObserver',JS)
-  self.assertIn('landing-v3.js?v=3.1.0',HTML)
+  self.assertRegex(HTML, r'landing-v3.js\?v=3\.[1-9][0-9]*\.0')
 if __name__=='__main__':unittest.main()

@@ -28,9 +28,9 @@ class CapeRanchDarkFooter(unittest.TestCase):
         self.assertIn('href="/staff-recovery"', HTML)
         self.assertTrue((ROOT / 'frontend/public/images/landing-v3/cape-ranch-footer-logo.webp').is_file())
 
-    def test_css_cache_busted_but_js_untouched(self):
-        self.assertIn('landing-v3.css?v=3.2.0', HTML)
-        self.assertIn('landing-v3.js?v=3.1.0', HTML)
+    def test_current_css_and_js_cache_versions(self):
+        self.assertRegex(HTML, r'landing-v3.css\?v=3\.[2-9][0-9]*\.0')
+        self.assertRegex(HTML, r'landing-v3.js\?v=3\.[1-9][0-9]*\.0')
         self.assertIn('@media(max-width:620px)',CSS)
         self.assertIn('prefers-reduced-motion:reduce',CSS)
 
