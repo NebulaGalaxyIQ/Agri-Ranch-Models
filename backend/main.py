@@ -83,11 +83,17 @@ app.mount('/frontend',StaticFiles(directory=FRONTEND),name='frontend')
 
 @app.get('/',include_in_schema=False)
 def homepage():
-    return FileResponse(FRONTEND/'index.html')
+    return FileResponse(FRONTEND/'landing.html')
 
 # Dedicated browser pages, sharing the ES-module application shell.
 @app.get('/register-organization',include_in_schema=False)
 @app.get('/staff-recovery',include_in_schema=False)
 @app.get('/first-time-setup',include_in_schema=False)
 def cape_registration_page():
+    return FileResponse(FRONTEND/'index.html')
+
+# Cape Ranch public landing: authenticated UI is retained at /app and /login.
+@app.get('/app',include_in_schema=False)
+@app.get('/login',include_in_schema=False)
+def cape_ranch_application_page():
     return FileResponse(FRONTEND/'index.html')
